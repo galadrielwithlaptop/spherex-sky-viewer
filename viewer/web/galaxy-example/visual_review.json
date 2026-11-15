@@ -1,0 +1,27 @@
+{
+  "scope": "First galaxy channel58 three selected exposures",
+  "panels_visually_inspected": true,
+  "rows": [
+    {
+      "rank": 1,
+      "chi2": 13.771373782068691,
+      "central_power": 0.0038339945857550697,
+      "outer_power": 0.051493431734985974
+    },
+    {
+      "rank": 2,
+      "chi2": 8.567308916375802,
+      "central_power": 0.871668104241015,
+      "outer_power": 0.09301830981858186
+    },
+    {
+      "rank": 0,
+      "chi2": 1.325392641316788,
+      "central_power": 0.03473170857822481,
+      "outer_power": 0.7271754101057313
+    }
+  ],
+  "finding": "Baseline residual appears relatively noise-like. Rank1 has localized alternating residual near a neighbour, away from target centre; rank2 has localized structured residual as well. This supports exposure-dependent scene mismatch, but does not identify PSF, registration, source identity or detector cause and does not prove target flux unaffected.",
+  "science_gate_passed": false,
+  "next": "Localize residuals against epoch-propagated source positions and target estimator weights; retain flags, compare sensitivity before using these fits."
+}

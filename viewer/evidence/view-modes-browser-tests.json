@@ -1,0 +1,64 @@
+{
+  "fieldModeChecks": [
+    {
+      "target": "Barnard's Star",
+      "timeNotice": "No comparable time-separated pair in this prepared selection. Try another wavelength group or Explore infrared colours.",
+      "timePlayDisabled": true,
+      "colourPlayEnabled": true
+    },
+    {
+      "target": "Epsilon Indi B",
+      "timeNotice": "No comparable time-separated pair in this prepared selection. Try another wavelength group or Explore infrared colours.",
+      "timePlayDisabled": true,
+      "colourPlayEnabled": true
+    },
+    {
+      "target": "RW Aurigae",
+      "timeNotice": "No comparable time-separated pair in this prepared selection. Try another wavelength group or Explore infrared colours.",
+      "timePlayDisabled": true,
+      "colourPlayEnabled": true
+    },
+    {
+      "target": "R Draconis",
+      "timeNotice": "No comparable time-separated pair in this prepared selection. Try another wavelength group or Explore infrared colours.",
+      "timePlayDisabled": true,
+      "colourPlayEnabled": true
+    }
+  ],
+  "exactSettingsRestored": true,
+  "before": {
+    "brightness": "180",
+    "count": "24",
+    "detector": "SPHEREx-D4",
+    "display-source": "processed",
+    "evidence-a": "bdc10b476859e947817f61e4",
+    "evidence-b": "8afbda486d9c4826dd89d544",
+    "from": "2025-01-01",
+    "group": "all",
+    "mode": "frame",
+    "speed": "300",
+    "through": "2025-12-31",
+    "time-band": "8afbda486d9c4826dd89d544",
+    "timeline": "1",
+    "view-intent": "time"
+  },
+  "after": {
+    "brightness": "180",
+    "count": "24",
+    "detector": "SPHEREx-D4",
+    "display-source": "processed",
+    "evidence-a": "bdc10b476859e947817f61e4",
+    "evidence-b": "8afbda486d9c4826dd89d544",
+    "from": "2025-01-01",
+    "group": "all",
+    "mode": "frame",
+    "speed": "300",
+    "through": "2025-12-31",
+    "time-band": "8afbda486d9c4826dd89d544",
+    "timeline": "1",
+    "view-intent": "time"
+  },
+  "coaddRestored": true,
+  "differenceRestored": true,
+  "invalidStateRejected": true
+}

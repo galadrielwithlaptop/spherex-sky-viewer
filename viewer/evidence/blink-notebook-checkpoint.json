@@ -1,0 +1,19 @@
+{
+  "updated_utc": "2026-11-15T14:20:57.215311+00:00",
+  "activity": "Notebook: reproduce a bounded view",
+  "stage": "Offline and cached-server end-to-end executions passed",
+  "executed_cells": 6,
+  "errors": [],
+  "outputs": "Separate deterministic run directories containing labelled GIF, PNGs, CSV, evidence JSON and ZIP",
+  "network_default": false,
+  "live_download_limit_frames": 4,
+  "live_download_limit_preview_bytes": 8388608,
+  "limitations": [
+    "Server performs WCS alignment; notebook uses prepared previews.",
+    "No independent motion/brightness validation.",
+    "GIF omits catalogue overlays/browser brightness filters and interactive coadds."
+  ],
+  "live_executed_cells": 6,
+  "new_archive_preparation_tested": false,
+  "notebook_sha256": "7692230d5e7a084627e4abc5c42e627630eeb1b1f05845c99b717ebf40953b79"
+}

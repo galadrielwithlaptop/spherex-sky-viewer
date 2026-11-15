@@ -1,0 +1,14 @@
+services:
+  viewer:
+    build: ./viewer
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8765:8765"
+    volumes:
+      - ./data:/data
+    environment:
+      SPHEREX_BIND: 0.0.0.0
+      SPHEREX_PORT: "8765"
+      SPHEREX_CACHE_DIR: /data
+      SPHEREX_ALLOWED_HOSTS: ${SPHEREX_ALLOWED_HOSTS:-localhost,127.0.0.1}
+    mem_limit: 2g

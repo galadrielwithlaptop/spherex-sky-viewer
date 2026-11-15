@@ -1,0 +1,37 @@
+{
+  "snapshot_date": "2026-11-15",
+  "diameter_arcmin": 5,
+  "processing": "Archive IMAGE only; no ePSF, zodiacal subtraction or quality-flag mask",
+  "targets": [
+    {
+      "name": "WISE0855",
+      "indexed_matches": 277,
+      "ready_images": 13,
+      "sequence_id": "dac82ac62dcce0ba29a1177f"
+    },
+    {
+      "name": "Barnard's Star",
+      "indexed_matches": 379,
+      "ready_images": 13,
+      "sequence_id": "bf0e89c7be9ee6d3072beec3"
+    },
+    {
+      "name": "eps Ind B",
+      "indexed_matches": 478,
+      "ready_images": 13,
+      "sequence_id": "e23bd549c4800152884d336b"
+    },
+    {
+      "name": "RW Aur",
+      "indexed_matches": 341,
+      "ready_images": 13,
+      "sequence_id": "e581992df43db308ecce911b"
+    },
+    {
+      "name": "R Dra",
+      "indexed_matches": 575,
+      "ready_images": 13,
+      "sequence_id": "ea2ab85dcb923741ea79b61e"
+    }
+  ]
+}

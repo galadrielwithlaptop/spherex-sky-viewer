@@ -1,0 +1,36 @@
+{
+  "response_caveat": "Kernels can differ materially: uncorrected flux pulls are descriptive, not a same-flux goodness-of-fit test. No response correction or error rescaling applied.",
+  "planned_pairs": 364,
+  "completed_pairs": 364,
+  "groups": [
+    {
+      "sample": "all_pairs",
+      "pairs": 364,
+      "median_pull": 0.049621798567207304,
+      "root_mean_square_pull": 1.12870898248926,
+      "pull_nmad": 1.192639359177049,
+      "pairs_abs_pull_over3": 3,
+      "maximum_absolute_pull": 3.0943205669632636,
+      "maximum_declared_kernel_sed_difference": 0.6120892363159849
+    },
+    {
+      "sample": "without_existing_chi2_flags",
+      "pairs": 341,
+      "median_pull": 0.04685940362368328,
+      "root_mean_square_pull": 1.133601395717026,
+      "pull_nmad": 1.2038298115722124,
+      "pairs_abs_pull_over3": 3,
+      "maximum_absolute_pull": 3.0943205669632636,
+      "maximum_declared_kernel_sed_difference": 0.6120892363159849
+    }
+  ],
+  "science_gate_passed": false,
+  "limitations": [
+    "Streaming two-object pilot with metadata-selected repeats; incomplete data are not population or absolute accuracy.",
+    "Conditional pull denominator assumes independent supplied noise, omits common morphology/calibration/PSF/background uncertainty.",
+    "Kernel differences from declared SEDs are diagnostics, not empirical galaxy priors or corrections.",
+    "Agreement cannot expose shared biases; response similarity is not equality.",
+    "Two comparisons in a channel share a baseline and are statistically dependent; no binomial coverage or independence claim.",
+    "Do not fit arbitrary error multipliers to make this small sample pass."
+  ]
+}

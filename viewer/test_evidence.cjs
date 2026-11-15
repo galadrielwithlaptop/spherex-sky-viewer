@@ -1,0 +1,12 @@
+const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/strict');
+const source=fs.readFileSync(__dirname+'/web/evidence.js','utf8');
+const body=source.slice(source.indexOf('  function finite'),source.indexOf('  // Export'));
+const context={};vm.createContext(context);vm.runInContext(body,context);
+const frame={id:'a',wavelength_um:2,bandwidth_um:.05,wavelength_reference:'target',mjd:60000};
+assert.match(context.assess(frame,frame).level,/different observations/);
+assert.match(context.assess(frame,{...frame,id:'b',mjd:60100,wavelength_um:2.001}).level,/Similar wavelengths/);
+assert.match(context.assess(frame,{...frame,id:'b',wavelength_um:3}).level,/Different wavelength/);
+assert.match(context.assess(frame,{id:'b'}).level,/Not enough metadata/);
+assert.ok(context.assess(frame,{...frame,id:'b',wavelength_reference:'cutout_center'}).notes.some(n=>n.includes('not confirmed')));
+assert.match(source,/evidence_a:a.value/);assert.match(source,/cutout_sha256/);assert.match(source,/No validated NEP redshift/);
+console.log('8 evidence screening/provenance checks passed');

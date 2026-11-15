@@ -1,0 +1,21 @@
+{
+  "scope": "Two galaxy candidates; up to three observations per nominal channel; no accepted redshift.",
+  "sky_positions": "Legacy DR9 catalogue ra/dec, mapped separately through each SPHEREx exposure WCS. Galaxy positions fixed; Legacy PSF-source proper motion propagated when finite pmra/pmdec and ref_epoch>1990.",
+  "galaxy_shapes": "Legacy DR9 Tractor model type, shape_r, shape_e1, shape_e2, Sersic index; ellipse projected using local WCS. Optical prior is not assumed to be exact NIR morphology.",
+  "alternate_shapes": "Euclid and HEROES/HSC investigated, not adopted as blanket replacements. Current measurements use Legacy baseline shapes.",
+  "gaia": "Gaia was investigated for identity/position diagnostics; these native fits do not substitute Gaia brightnesses or universally replace Legacy positions.",
+  "brightness": "Fitted from SPHEREx native IMAGE/VARIANCE pixels, not copied from Legacy optical or Gaia brightness.",
+  "psf": "Each source uses its local SPHEREx ePSF; extended profiles convolved with that ePSF. ePSF includes pixel response; no double convolution.",
+  "calibration": "QR3 wavelength, bandwidth and solid-angle maps. QR2 flux converted with gain and variance gain-squared; QR3 not corrected twice. ZODI not automatically subtracted in this galaxy diagnostic; constant sky fitted with neighbours.",
+  "mask": "Existing conservative pixel-quality policy retained, with positive finite variance. No new masking to make a fit pass.",
+  "fit": "31x31 native stamp; neighbouring sources within native selection footprint; weighted SVD nuisance projection including constant sky, existing1e7 singular-value boundary. Conditional target error retains linear nuisance covariance, omits model/calibration systematics.",
+  "spectral_response": "Individual estimator-weighted signed kernels; nearest17+68 laboratory reference with local centre/bandwidth transformation. Conditioned response separate from raw signed version in original scientific outputs; internal normalization not full on-sky calibration.",
+  "selection": "Maximum edge margin first; further distinct obs>=0.01day apart ranked by centre/bandwidth metadata, before flux inspection. No spectroscopic redshift selection/tuning.",
+  "limitations": [
+    "Observer-dependent parallax and registration not fully validated.",
+    "Some nearby sources cannot have individually identified nuisance amplitudes.",
+    "Three repeats may share morphology/PSF/background biases.",
+    "No accepted real-galaxy P(z), cosmological distance or3D position.",
+    "CSV errors are conditional, not validated total errors."
+  ]
+}

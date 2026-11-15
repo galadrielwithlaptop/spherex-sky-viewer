@@ -1,0 +1,150 @@
+{
+  "measurement": "Fixture-backed logic test duration, not real browser or archive latency",
+  "results": [
+    {
+      "option": "one_click_cached_images",
+      "status": "pass",
+      "logic_test_duration_ms": 6.540999999999997
+    },
+    {
+      "option": "first_load_queue_and_refreshable_job",
+      "status": "pass",
+      "logic_test_duration_ms": 2.1362000000000023
+    },
+    {
+      "option": "empty_metadata_result",
+      "status": "pass",
+      "logic_test_duration_ms": 1.1345000000000027
+    },
+    {
+      "option": "invalid_coordinate_form",
+      "status": "pass",
+      "logic_test_duration_ms": 0.948200000000007
+    },
+    {
+      "option": "resume_coordinate_job_url",
+      "status": "pass",
+      "logic_test_duration_ms": 1.786999999999999
+    },
+    {
+      "option": "image_error_is_visible",
+      "status": "pass",
+      "logic_test_duration_ms": 1.9491999999999976
+    },
+    {
+      "option": "preset_WISE0855",
+      "status": "pass",
+      "logic_test_duration_ms": 1.8237000000000023
+    },
+    {
+      "option": "preset_Barnard's Star",
+      "status": "pass",
+      "logic_test_duration_ms": 23.459100000000007
+    },
+    {
+      "option": "preset_eps Ind B",
+      "status": "pass",
+      "logic_test_duration_ms": 3.117900000000006
+    },
+    {
+      "option": "preset_RW Aur",
+      "status": "pass",
+      "logic_test_duration_ms": 2.8722999999999956
+    },
+    {
+      "option": "preset_R Dra",
+      "status": "pass",
+      "logic_test_duration_ms": 3.224900000000005
+    },
+    {
+      "option": "field_of_view_and_coordinate_invalidation",
+      "status": "pass",
+      "logic_test_duration_ms": 2.5889999999999986
+    },
+    {
+      "option": "detector_filter_empty_result",
+      "status": "pass",
+      "logic_test_duration_ms": 2.139700000000005
+    },
+    {
+      "option": "date_range_and_reversed_dates",
+      "status": "pass",
+      "logic_test_duration_ms": 3.3045000000000044
+    },
+    {
+      "option": "sample_size_6",
+      "status": "pass",
+      "logic_test_duration_ms": 2.632000000000005
+    },
+    {
+      "option": "sample_size_12",
+      "status": "pass",
+      "logic_test_duration_ms": 2.6732999999999976
+    },
+    {
+      "option": "sample_size_24",
+      "status": "pass",
+      "logic_test_duration_ms": 2.325099999999992
+    },
+    {
+      "option": "wavelength_match_toggle",
+      "status": "pass",
+      "logic_test_duration_ms": 1.518100000000004
+    },
+    {
+      "option": "previous_next_timeline_keyboard",
+      "status": "pass",
+      "logic_test_duration_ms": 4.868600000000001
+    },
+    {
+      "option": "play_pause_and_all_speed_options",
+      "status": "pass",
+      "logic_test_duration_ms": 3.9654999999999916
+    },
+    {
+      "option": "coadd",
+      "status": "pass",
+      "logic_test_duration_ms": 2.348799999999997
+    },
+    {
+      "option": "difference",
+      "status": "pass",
+      "logic_test_duration_ms": 1.7909999999999968
+    },
+    {
+      "option": "mixed_wavelength_comparison_guard",
+      "status": "pass",
+      "logic_test_duration_ms": 1.9895999999999958
+    },
+    {
+      "option": "overlay_gaia",
+      "status": "pass",
+      "logic_test_duration_ms": 2.244500000000002
+    },
+    {
+      "option": "overlay_wise",
+      "status": "pass",
+      "logic_test_duration_ms": 3.4496000000000038
+    },
+    {
+      "option": "overlay_out_of_order_response_guard",
+      "status": "pass",
+      "logic_test_duration_ms": 2.8135000000000048
+    },
+    {
+      "option": "brightness_is_display_only",
+      "status": "pass",
+      "logic_test_duration_ms": 2.003600000000006
+    },
+    {
+      "option": "metadata_gif_and_fits_exports",
+      "status": "pass",
+      "logic_test_duration_ms": 2.209699999999998
+    },
+    {
+      "option": "explicit_archive_refresh",
+      "status": "pass",
+      "logic_test_duration_ms": 2.068799999999996
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+**
+!Dockerfile
+!requirements.txt
+!*.py
+!web/
+!web/**
+!evidence/
+!evidence/target-coverage.json
+web/**/__pycache__/
+web/**/*.fits
+web/**/*.fits.gz

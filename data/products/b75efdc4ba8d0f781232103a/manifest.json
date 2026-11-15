@@ -1,0 +1,99 @@
+{
+  "frames": [
+    {
+      "id": "59cacf82a176747e1e0ecfa3",
+      "observation": "2025W19_1B_0116_1",
+      "detector": "SPHEREx-D3",
+      "collection": "spherex_dr1",
+      "mjd": 60800.700028,
+      "utc": "2025-05-05T16:48:02.419Z",
+      "wavelength_um": 2.3649535260281147,
+      "bandwidth_um": 0.05867391594622802,
+      "wavelength_reference": "target",
+      "valid_fraction": 0.9711456298828125,
+      "native_flagged_fraction": 0.04152249134948097,
+      "flag_counts": {
+        "TRANSIENT": 53,
+        "OVERFLOW": 0,
+        "SUR_ERROR": 32,
+        "NONFUNC": 32,
+        "DICHROIC": 0,
+        "MISSING_DATA": 0,
+        "HOT": 0,
+        "COLD": 11,
+        "FULLSAMPLE": 0,
+        "PHANMISS": 0,
+        "NONLINEAR": 0,
+        "PERSIST": 3,
+        "OUTLIER": 149,
+        "CROSSTALK": 0,
+        "SOURCE": 3014,
+        "GHOST": 0,
+        "GHOST_FPA": 0,
+        "GHOST_EXT": 0,
+        "STREAK": 0,
+        "BLOOM": 0,
+        "SNOWBALL": 0,
+        "HALO": 122
+      },
+      "cutout_sha256": "4d66e22f55ea13881e2b223de9d886558449777a4c1ee6c85934ec519239e3e7",
+      "source_url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W19_1B/l2b-v27-2026-197/3/level2_2025W19_1B_0116_1D3_spx_l2b-v27-2026-197.fits",
+      "fits_key": "e9357aec77c2253e15e7ee37",
+      "mask_policy": "all flags except informational SOURCE/FULLSAMPLE excluded; finite IMAGE/ZODI and positive VARIANCE",
+      "processing": "IMAGE \u2212 ZODI; nearest-pixel WCS projection; north up / east left; no PSF homogenization",
+      "image": "/products/b75efdc4ba8d0f781232103a/0.png",
+      "index": 0
+    }
+  ],
+  "groups": [
+    {
+      "indices": [
+        0
+      ],
+      "wavelength_um": 2.3649535260281147,
+      "coadd": "/products/b75efdc4ba8d0f781232103a/coadd-0.png",
+      "difference": null,
+      "animation": null
+    }
+  ],
+  "errors": [],
+  "planning": {
+    "requested_records": 1,
+    "method": "All explicitly selected records are attempted; wavelength groups organize comparisons without discarding other records."
+  },
+  "recipe_version": "4-wavelength-planned",
+  "parameters": {
+    "ra": 133.7951291667,
+    "dec": -7.2451472222,
+    "fov": 5.0
+  },
+  "render_grid": {
+    "projection": "TAN",
+    "size": 256,
+    "crpix_fits": [
+      128.5,
+      128.5
+    ],
+    "crval_deg": [
+      133.7951291667,
+      -7.2451472222
+    ],
+    "cdelt_deg": [
+      -0.0003255208333333333,
+      -0.0003255208333333333
+    ]
+  },
+  "stretch": {
+    "low": -0.00372488796710968,
+    "high": 0.8651337325572968,
+    "units": "MJy/sr",
+    "method": "common asinh"
+  },
+  "warnings": [
+    "Exploratory imagery, not a variability detection.",
+    "Wavelength lookup is visualization precision; matching centres/widths does not establish identical response.",
+    "No PSF matching or astrometric validation. Differences can be instrumental.",
+    "Coadds are unweighted means of available frames; no propagated uncertainty.",
+    "Conservative masks may remove usable pixels. Proper motion is not propagated."
+  ]
+}

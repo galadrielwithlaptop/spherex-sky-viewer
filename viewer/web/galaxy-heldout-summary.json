@@ -1,0 +1,59 @@
+{
+  "groups": [
+    {
+      "object_id": "LS9_9011_633415_2993",
+      "slope": -2,
+      "predictions": 234,
+      "rms": 1.049115824842184,
+      "median": 0.020257361772961096,
+      "abs_over3": 0
+    },
+    {
+      "object_id": "LS9_9011_633415_2993",
+      "slope": 0,
+      "predictions": 234,
+      "rms": 1.0483080771007234,
+      "median": 0.012329234249793384,
+      "abs_over3": 0
+    },
+    {
+      "object_id": "LS9_9011_633415_2993",
+      "slope": 2,
+      "predictions": 234,
+      "rms": 1.0477874231318538,
+      "median": 0.004911742704627681,
+      "abs_over3": 0
+    },
+    {
+      "object_id": "LS9_9011_636281_2835",
+      "slope": -2,
+      "predictions": 293,
+      "rms": 1.1603342872938567,
+      "median": -0.0009034418496153656,
+      "abs_over3": 1
+    },
+    {
+      "object_id": "LS9_9011_636281_2835",
+      "slope": 0,
+      "predictions": 293,
+      "rms": 1.1587211671238284,
+      "median": 0.0012591993612674208,
+      "abs_over3": 1
+    },
+    {
+      "object_id": "LS9_9011_636281_2835",
+      "slope": 2,
+      "predictions": 293,
+      "rms": 1.1587093643936788,
+      "median": 0.00237039809207501,
+      "abs_over3": 2
+    }
+  ],
+  "limitations": [
+    "Predictions share data and are correlated.",
+    "Existing fit flags excluded; restricted assumed powerlaw spectrum, not final template inference.",
+    "Shared morphology/calibration systematics not validated.",
+    "No absolute brightness truth or redshift fitted."
+  ],
+  "science_gate_passed": false
+}

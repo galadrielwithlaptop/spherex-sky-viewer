@@ -1,0 +1,77 @@
+[
+  {
+    "name": "RW Aur",
+    "request": {
+      "ra": 76.95652603458,
+      "dec": 30.40143817389,
+      "fov_arcmin": 10,
+      "observation_ids": [
+        "dfdafcc56a5c6a510641291c",
+        "2d11d3ae07cf7c352de26d3f"
+      ],
+      "match_wavelengths": true
+    },
+    "result": {
+      "api_version": "1.0",
+      "job_id": "c6a532216847ad74618c90b1",
+      "state": "queued",
+      "links": {
+        "status": "/api/v1/sequences/c6a532216847ad74618c90b1",
+        "viewer": "/?job=c6a532216847ad74618c90b1"
+      },
+      "request_id": "de5c8c16c3a34132"
+    },
+    "warning": "Different dates/same detector; wavelength match and detection unverified.",
+    "last_status": {
+      "state": "complete",
+      "progress": "2 real frames ready",
+      "errors": [],
+      "done": 1,
+      "api_version": "1.0",
+      "job_id": "c6a532216847ad74618c90b1",
+      "links": {
+        "viewer": "/?job=c6a532216847ad74618c90b1",
+        "manifest": "/api/v1/products/c6a532216847ad74618c90b1/manifest.json"
+      },
+      "request_id": "db923bb6acfa4573"
+    }
+  },
+  {
+    "name": "R Dra",
+    "request": {
+      "ra": 248.16761083295,
+      "dec": 66.75497941722,
+      "fov_arcmin": 10,
+      "observation_ids": [
+        "7d4ee047c78e86685fe6ef37",
+        "4f68562dc5a4e7c596947fb1"
+      ],
+      "match_wavelengths": true
+    },
+    "result": {
+      "api_version": "1.0",
+      "job_id": "6d5e19193379f16aada7e93d",
+      "state": "queued",
+      "links": {
+        "status": "/api/v1/sequences/6d5e19193379f16aada7e93d",
+        "viewer": "/?job=6d5e19193379f16aada7e93d"
+      },
+      "request_id": "d53f20572c4e431f"
+    },
+    "warning": "Different dates/same detector; wavelength match and detection unverified.",
+    "last_error": "{\"error\": {\"code\": \"invalid_request\", \"message\": \"Two image tasks already queued; wait for completion\"}, \"request_id\": \"09b4bf015cad456f\"}",
+    "last_status": {
+      "state": "complete",
+      "progress": "2 real frames ready",
+      "errors": [],
+      "done": 1,
+      "api_version": "1.0",
+      "job_id": "6d5e19193379f16aada7e93d",
+      "links": {
+        "viewer": "/?job=6d5e19193379f16aada7e93d",
+        "manifest": "/api/v1/products/6d5e19193379f16aada7e93d/manifest.json"
+      },
+      "request_id": "4df6cce237524237"
+    }
+  }
+]

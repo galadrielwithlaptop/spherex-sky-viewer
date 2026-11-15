@@ -1,0 +1,20 @@
+{
+  "stage": "Reviewed notebook ready; joint injection validation protocol frozen separately",
+  "five_field_image_preparation": "At least two actual preview PNGs decoded for each named field; matched-wavelength motion/variability not established",
+  "galaxy_measurements": 561,
+  "flagged": 19,
+  "notebook_executed": true,
+  "native_new_target_cell": "Opt-in only; requires external science repository, original exposures, field catalogue and calibration. Not executed on a new galaxy.",
+  "redshift_ready": false,
+  "files": {
+    "galaxy-lab.ipynb": "2e8e4b714b0f04440ee13d66eaac35592536a0d0d64ce61047e12bde89fba2b2",
+    "galaxy-example.zip": "4aadaa8f62d8e18108c4ad425892086b49ae8567e9d0e9b805a52d2192bbb39d",
+    "galaxy-heldout-predictions.csv": "942b82142e59534ffbef113f54215e69d951ec06432e777ba3777031fbf80b9a"
+  },
+  "executed_code_cells": 12,
+  "code_cells": 12,
+  "execution_errors": [],
+  "heldout_check": "Restricted smooth-spectrum diagnostics, not absolute accuracy",
+  "optional_helper": "7 preflight tests passed; new-galaxy scientific fit not executed",
+  "credits": "web/credits.html and notebook source acknowledgements"
+}

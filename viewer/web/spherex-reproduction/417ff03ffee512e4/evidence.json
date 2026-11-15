@@ -1,0 +1,159 @@
+{
+  "schema_version": 2,
+  "intent": "time",
+  "source": "analysis",
+  "job_id": "d932aa0b89a2b6d74925f353",
+  "parameters": {
+    "ra": 133.7951291667,
+    "dec": -7.2451472222,
+    "fov": 10.0
+  },
+  "frames": [
+    {
+      "id": "bdc10b476859e947817f61e4",
+      "observation": "2025W19_1B_0241_2",
+      "detector": "SPHEREx-D4",
+      "collection": "spherex_dr1",
+      "mjd": 60801.515669,
+      "utc": "2025-05-06T12:22:33.802Z",
+      "wavelength_um": 3.4531538932993646,
+      "bandwidth_um": 0.09678350972095585,
+      "wavelength_reference": "target",
+      "valid_fraction": 0.9663238525390625,
+      "native_flagged_fraction": 0.039476286539298286,
+      "flag_counts": {
+        "TRANSIENT": 162,
+        "OVERFLOW": 20,
+        "SUR_ERROR": 134,
+        "NONFUNC": 214,
+        "DICHROIC": 0,
+        "MISSING_DATA": 0,
+        "HOT": 0,
+        "COLD": 14,
+        "FULLSAMPLE": 0,
+        "PHANMISS": 0,
+        "NONLINEAR": 0,
+        "PERSIST": 22,
+        "OUTLIER": 400,
+        "CROSSTALK": 0,
+        "SOURCE": 14780,
+        "GHOST": 0,
+        "GHOST_FPA": 0,
+        "GHOST_EXT": 0,
+        "STREAK": 0,
+        "BLOOM": 0,
+        "SNOWBALL": 0,
+        "HALO": 373
+      },
+      "cutout_sha256": "92da3ff721eb302010eef34d6838fb461dcba18ec769b3714556479149208312",
+      "source_url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W19_1B/l2b-v27-2026-197/4/level2_2025W19_1B_0241_2D4_spx_l2b-v27-2026-197.fits",
+      "fits_key": "5dff2ed7baf54a776a956a45",
+      "mask_policy": "all flags except informational SOURCE/FULLSAMPLE excluded; finite IMAGE/ZODI and positive VARIANCE",
+      "processing": "IMAGE \u2212 ZODI; nearest-pixel WCS projection; north up / east left; no PSF homogenization",
+      "image": "/products/d932aa0b89a2b6d74925f353/25.png",
+      "index": 25
+    },
+    {
+      "id": "8afbda486d9c4826dd89d544",
+      "observation": "2025W44_2B_0322_2",
+      "detector": "SPHEREx-D4",
+      "collection": "spherex_dr1",
+      "mjd": 60979.790131,
+      "utc": "2025-10-31T18:57:47.318Z",
+      "wavelength_um": 3.442570534493775,
+      "bandwidth_um": 0.09862722835025706,
+      "wavelength_reference": "target",
+      "valid_fraction": 0.97021484375,
+      "native_flagged_fraction": 0.030180768165816226,
+      "flag_counts": {
+        "TRANSIENT": 121,
+        "OVERFLOW": 16,
+        "SUR_ERROR": 109,
+        "NONFUNC": 114,
+        "DICHROIC": 0,
+        "MISSING_DATA": 0,
+        "HOT": 0,
+        "COLD": 15,
+        "FULLSAMPLE": 0,
+        "PHANMISS": 0,
+        "NONLINEAR": 0,
+        "PERSIST": 35,
+        "OUTLIER": 373,
+        "CROSSTALK": 0,
+        "SOURCE": 14734,
+        "GHOST": 0,
+        "GHOST_FPA": 0,
+        "GHOST_EXT": 0,
+        "STREAK": 0,
+        "BLOOM": 0,
+        "SNOWBALL": 0,
+        "HALO": 255
+      },
+      "cutout_sha256": "d75e0e5295b0d185075dbcf7164bdea334e5827e2a695be969517292ec54a06a",
+      "source_url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W44_2B/l2b-v27-2026-246/4/level2_2025W44_2B_0322_2D4_spx_l2b-v27-2026-246.fits",
+      "fits_key": "44ad1fc04e381d133f3f304d",
+      "mask_policy": "all flags except informational SOURCE/FULLSAMPLE excluded; finite IMAGE/ZODI and positive VARIANCE",
+      "processing": "IMAGE \u2212 ZODI; nearest-pixel WCS projection; north up / east left; no PSF homogenization",
+      "image": "/products/d932aa0b89a2b6d74925f353/44.png",
+      "index": 44
+    }
+  ],
+  "pair_screens": [
+    {
+      "a": "bdc10b476859e947817f61e4",
+      "b": "8afbda486d9c4826dd89d544",
+      "similar_response_metadata": true,
+      "distinct_epoch": true
+    }
+  ],
+  "preview_hashes": [
+    {
+      "id": "bdc10b476859e947817f61e4",
+      "preview_sha256": "856647c6b50536e561f30ca084c787f59a7419f125bd30b82b0e9df8a0115561"
+    },
+    {
+      "id": "8afbda486d9c4826dd89d544",
+      "preview_sha256": "6a62f97366e2f5a5968e34f02d40158ea5485025e2de5c6a24572571d65f87c8"
+    }
+  ],
+  "processing": "See per-frame recipe",
+  "warnings": [
+    "Exploratory imagery, not a variability detection.",
+    "Wavelength lookup is visualization precision; matching centres/widths does not establish identical response.",
+    "No PSF matching or astrometric validation. Differences can be instrumental.",
+    "Coadds are unweighted means of available frames; no propagated uncertainty.",
+    "Conservative masks may remove usable pixels. Proper motion is not propagated."
+  ],
+  "saved_view": {
+    "v": 1,
+    "intent": "time",
+    "timeBand": "8afbda486d9c4826dd89d544",
+    "source": "processed",
+    "mode": "frame",
+    "overlay": "none",
+    "sequence": "all",
+    "speed": "300",
+    "count": "24",
+    "brightness": 180,
+    "detector": "SPHEREx-D4",
+    "from": "2025-01-01",
+    "through": "2025-12-31",
+    "group": "all",
+    "frames": [
+      "bdc10b476859e947817f61e4",
+      "8afbda486d9c4826dd89d544"
+    ],
+    "current": "8afbda486d9c4826dd89d544",
+    "tab": "playback",
+    "evidenceA": "bdc10b476859e947817f61e4",
+    "evidenceB": "8afbda486d9c4826dd89d544"
+  },
+  "confirmed_discovery": false,
+  "limitations": [
+    "Prepared previews; no independent WCS/PSF validation.",
+    "PNG brightness is not calibrated object photometry.",
+    "Frame flags describe cutout metadata, not target detection.",
+    "Different wavelengths can mimic change.",
+    "GIF does not reproduce overlays or browser display filters."
+  ]
+}

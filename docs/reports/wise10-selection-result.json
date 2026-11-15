@@ -1,0 +1,17 @@
+{
+  "job": "c58dd63fa183bd674babcfab",
+  "selection": {
+    "pool_records": 43,
+    "cached_wavelengths": 11,
+    "uncached_headers": 31,
+    "excluded": [
+      {
+        "id": "b25a0ee921afcf4c58b0654c",
+        "reason": "Target is outside the native detector footprint"
+      }
+    ],
+    "selected_candidates": 2,
+    "method": "Matching target wavelengths found in cached headers before time sampling",
+    "network_requests": 0
+  }
+}

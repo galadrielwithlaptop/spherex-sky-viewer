@@ -1,0 +1,15 @@
+* text=auto
+*.py text eol=lf
+*.js text eol=lf
+*.cjs text eol=lf
+*.html text eol=lf
+*.md text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+*.fits binary
+*.sqlite binary
+*.png binary
+*.jpg binary
+*.gif binary
+*.zip binary
+*.npz binary

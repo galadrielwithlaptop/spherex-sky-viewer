@@ -1,0 +1,267 @@
+{
+  "updated_utc": "2026-11-15T14:20:57.215311+00:00",
+  "scope": "Five challenge fields first; cached metadata and prepared images only; zero new cutout downloads",
+  "targets": [
+    {
+      "name": "WISE0855",
+      "ra": 133.7951291667,
+      "dec": -7.2451472222,
+      "metadata_query": "passed",
+      "indexed_matches": 277,
+      "coverage": {
+        "complete_for_requested_collections": false,
+        "fresh": false,
+        "collections": [
+          {
+            "complete": false,
+            "fresh": false,
+            "fetched": null,
+            "collection": "spherex_dr1",
+            "source": "local_index"
+          },
+          {
+            "complete": false,
+            "fresh": false,
+            "fetched": null,
+            "collection": "spherex_qr3",
+            "source": "local_index"
+          }
+        ],
+        "unverified_footprints": 0,
+        "interpretation": "Archive footprint overlaps, not source detections or independent same-wavelength epochs"
+      },
+      "prepared_frames": 59,
+      "approximate_similar_response_pairs": 8,
+      "demonstrated_motion_or_variability": false,
+      "limitations": [
+        "Fixed catalogue/challenge position; not an epoch-propagated source track.",
+        "Pair count screens metadata only; cached fields can have different sizes. Not calibrated response equality or confirmed target detection."
+      ],
+      "checked_example_frames": [
+        {
+          "id": "76ed708a1bd802d9257b4a2c",
+          "utc": "2025-05-06T12:22:33.802Z",
+          "wavelength_um": 1.0174305017412684,
+          "image_decoded": true
+        },
+        {
+          "id": "bdc10b476859e947817f61e4",
+          "utc": "2025-05-06T12:22:33.802Z",
+          "wavelength_um": 3.4531538932993646,
+          "image_decoded": true
+        }
+      ],
+      "image_preparation_check": "passed",
+      "example_url": "/?ra=133.7951291667&dec=-7.2451472222&fov=10.0&job=d932aa0b89a2b6d74925f353"
+    },
+    {
+      "name": "Barnard's Star",
+      "ra": 269.4520769586187,
+      "dec": 4.69336496657667,
+      "metadata_query": "passed",
+      "indexed_matches": 379,
+      "coverage": {
+        "complete_for_requested_collections": false,
+        "fresh": false,
+        "collections": [
+          {
+            "complete": false,
+            "fresh": false,
+            "fetched": null,
+            "collection": "spherex_dr1",
+            "source": "local_index"
+          },
+          {
+            "complete": false,
+            "fresh": false,
+            "fetched": null,
+            "collection": "spherex_qr3",
+            "source": "local_index"
+          }
+        ],
+        "unverified_footprints": 0,
+        "interpretation": "Archive footprint overlaps, not source detections or independent same-wavelength epochs"
+      },
+      "prepared_frames": 2,
+      "approximate_similar_response_pairs": 0,
+      "demonstrated_motion_or_variability": false,
+      "limitations": [
+        "Fixed catalogue/challenge position; not an epoch-propagated source track.",
+        "Pair count screens metadata only; cached fields can have different sizes. Not calibrated response equality or confirmed target detection."
+      ],
+      "checked_example_frames": [
+        {
+          "id": "2b08e41a24747366648f50c5",
+          "utc": "2025-08-29T17:21:48.672Z",
+          "wavelength_um": 1.0468733407493196,
+          "image_decoded": true
+        },
+        {
+          "id": "60351d76e18fc1a69fc833a6",
+          "utc": "2026-03-11T15:17:41.338Z",
+          "wavelength_um": 1.050872354488161,
+          "image_decoded": true
+        }
+      ],
+      "image_preparation_check": "passed",
+      "example_url": "/?ra=269.4520769586187&dec=4.69336496657667&fov=5.0&job=4d769ea56c18422f3f0a5a26"
+    },
+    {
+      "name": "eps Ind B",
+      "ra": 331.04414658852124,
+      "dec": -56.78284419511611,
+      "metadata_query": "passed",
+      "indexed_matches": 478,
+      "coverage": {
+        "complete_for_requested_collections": false,
+        "fresh": false,
+        "collections": [
+          {
+            "complete": false,
+            "fresh": false,
+            "fetched": null,
+            "collection": "spherex_dr1",
+            "source": "local_index"
+          },
+          {
+            "complete": false,
+            "fresh": false,
+            "fetched": null,
+            "collection": "spherex_qr3",
+            "source": "local_index"
+          }
+        ],
+        "unverified_footprints": 0,
+        "interpretation": "Archive footprint overlaps, not source detections or independent same-wavelength epochs"
+      },
+      "prepared_frames": 2,
+      "approximate_similar_response_pairs": 0,
+      "demonstrated_motion_or_variability": false,
+      "limitations": [
+        "Fixed catalogue/challenge position; not an epoch-propagated source track.",
+        "Pair count screens metadata only; cached fields can have different sizes. Not calibrated response equality or confirmed target detection."
+      ],
+      "checked_example_frames": [
+        {
+          "id": "d1065db3d4adcc642cb8ddd3",
+          "utc": "2025-10-10T08:59:28.723Z",
+          "wavelength_um": 3.605068662232674,
+          "image_decoded": true
+        },
+        {
+          "id": "3dbcf674cfd888ac4715f102",
+          "utc": "2026-05-03T17:13:24.701Z",
+          "wavelength_um": 3.627103071841954,
+          "image_decoded": true
+        }
+      ],
+      "image_preparation_check": "passed",
+      "example_url": "/?ra=331.04414658852124&dec=-56.78284419511611&fov=5.0&job=43fd6ff205a9cedcd68ed2df"
+    },
+    {
+      "name": "RW Aur",
+      "ra": 76.95652603458,
+      "dec": 30.40143817389,
+      "metadata_query": "passed",
+      "indexed_matches": 341,
+      "coverage": {
+        "complete_for_requested_collections": false,
+        "fresh": false,
+        "collections": [
+          {
+            "complete": false,
+            "fresh": false,
+            "fetched": null,
+            "collection": "spherex_dr1",
+            "source": "local_index"
+          },
+          {
+            "complete": false,
+            "fresh": false,
+            "fetched": null,
+            "collection": "spherex_qr3",
+            "source": "local_index"
+          }
+        ],
+        "unverified_footprints": 0,
+        "interpretation": "Archive footprint overlaps, not source detections or independent same-wavelength epochs"
+      },
+      "prepared_frames": 2,
+      "approximate_similar_response_pairs": 0,
+      "demonstrated_motion_or_variability": false,
+      "limitations": [
+        "Fixed catalogue/challenge position; not an epoch-propagated source track.",
+        "Pair count screens metadata only; cached fields can have different sizes. Not calibrated response equality or confirmed target detection."
+      ],
+      "checked_example_frames": [
+        {
+          "id": "dfdafcc56a5c6a510641291c",
+          "utc": "2025-09-01T10:04:17.501Z",
+          "wavelength_um": 1.0683151354598301,
+          "image_decoded": true
+        },
+        {
+          "id": "2d11d3ae07cf7c352de26d3f",
+          "utc": "2026-09-09T21:42:13.853Z",
+          "wavelength_um": 0.9743631648071044,
+          "image_decoded": true
+        }
+      ],
+      "image_preparation_check": "passed",
+      "example_url": "/?ra=76.95652603458&dec=30.40143817389&fov=10.0&job=c6a532216847ad74618c90b1"
+    },
+    {
+      "name": "R Dra",
+      "ra": 248.16761083295,
+      "dec": 66.75497941722,
+      "metadata_query": "passed",
+      "indexed_matches": 575,
+      "coverage": {
+        "complete_for_requested_collections": false,
+        "fresh": false,
+        "collections": [
+          {
+            "complete": false,
+            "fresh": false,
+            "fetched": null,
+            "collection": "spherex_dr1",
+            "source": "local_index"
+          },
+          {
+            "complete": false,
+            "fresh": false,
+            "fetched": null,
+            "collection": "spherex_qr3",
+            "source": "local_index"
+          }
+        ],
+        "unverified_footprints": 0,
+        "interpretation": "Archive footprint overlaps, not source detections or independent same-wavelength epochs"
+      },
+      "prepared_frames": 2,
+      "approximate_similar_response_pairs": 0,
+      "demonstrated_motion_or_variability": false,
+      "limitations": [
+        "Fixed catalogue/challenge position; not an epoch-propagated source track.",
+        "Pair count screens metadata only; cached fields can have different sizes. Not calibrated response equality or confirmed target detection."
+      ],
+      "checked_example_frames": [
+        {
+          "id": "7d4ee047c78e86685fe6ef37",
+          "utc": "2025-05-16T22:56:23.626Z",
+          "wavelength_um": 1.655330342238583,
+          "image_decoded": true
+        },
+        {
+          "id": "4f68562dc5a4e7c596947fb1",
+          "utc": "2026-06-12T20:39:42.192Z",
+          "wavelength_um": 1.9553132907097035,
+          "image_decoded": true
+        }
+      ],
+      "image_preparation_check": "passed",
+      "example_url": "/?ra=248.16761083295&dec=66.75497941722&fov=10.0&job=6d5e19193379f16aada7e93d"
+    }
+  ],
+  "matching_policy": "Viewer time-mode screen: target wavelength, same detector/release, centre difference<=25% narrowerbandwidth, widthratios within10% both ways, different observation and>1second apart; not calibrated response equivalence."
+}

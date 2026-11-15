@@ -1,0 +1,179 @@
+{
+  "updated_utc": "2026-11-15T11:34:44.566320+00:00",
+  "planned_jobs": 561,
+  "saved_jobs": 561,
+  "incomplete_jobs": 0,
+  "fixed_shapes_Fnu_powerlaw_slopes": [
+    -2,
+    0,
+    2
+  ],
+  "groups": [
+    {
+      "object_id": "LS9_9011_633415_2993",
+      "sample": "all_saved",
+      "powerlaw_slope_Fnu": -2,
+      "fully_extracted_comparable_channels": 95,
+      "channels_with_multiple_eligible_exposures": 84,
+      "median_error_ratio": 0.5852767974344735,
+      "median_conditional_error_reduction_percent": 41.47232025655265,
+      "error_ratio_range": [
+        0.39735944104691817,
+        1.0
+      ]
+    },
+    {
+      "object_id": "LS9_9011_633415_2993",
+      "sample": "all_saved",
+      "powerlaw_slope_Fnu": 0,
+      "fully_extracted_comparable_channels": 95,
+      "channels_with_multiple_eligible_exposures": 84,
+      "median_error_ratio": 0.5841467884957217,
+      "median_conditional_error_reduction_percent": 41.58532115042783,
+      "error_ratio_range": [
+        0.4011448538439075,
+        1.0
+      ]
+    },
+    {
+      "object_id": "LS9_9011_633415_2993",
+      "sample": "all_saved",
+      "powerlaw_slope_Fnu": 2,
+      "fully_extracted_comparable_channels": 95,
+      "channels_with_multiple_eligible_exposures": 84,
+      "median_error_ratio": 0.5840304541494388,
+      "median_conditional_error_reduction_percent": 41.596954585056125,
+      "error_ratio_range": [
+        0.4048516323766258,
+        1.0
+      ]
+    },
+    {
+      "object_id": "LS9_9011_633415_2993",
+      "sample": "without_existing_chi2_flags",
+      "powerlaw_slope_Fnu": -2,
+      "fully_extracted_comparable_channels": 92,
+      "channels_with_multiple_eligible_exposures": 81,
+      "median_error_ratio": 0.595119182951003,
+      "median_conditional_error_reduction_percent": 40.488081704899706,
+      "error_ratio_range": [
+        0.39735944104691817,
+        1.0
+      ]
+    },
+    {
+      "object_id": "LS9_9011_633415_2993",
+      "sample": "without_existing_chi2_flags",
+      "powerlaw_slope_Fnu": 0,
+      "fully_extracted_comparable_channels": 92,
+      "channels_with_multiple_eligible_exposures": 81,
+      "median_error_ratio": 0.5970943748897137,
+      "median_conditional_error_reduction_percent": 40.290562511028625,
+      "error_ratio_range": [
+        0.4011448538439075,
+        1.0
+      ]
+    },
+    {
+      "object_id": "LS9_9011_633415_2993",
+      "sample": "without_existing_chi2_flags",
+      "powerlaw_slope_Fnu": 2,
+      "fully_extracted_comparable_channels": 92,
+      "channels_with_multiple_eligible_exposures": 81,
+      "median_error_ratio": 0.595374254429738,
+      "median_conditional_error_reduction_percent": 40.4625745570262,
+      "error_ratio_range": [
+        0.4048516323766258,
+        1.0
+      ]
+    },
+    {
+      "object_id": "LS9_9011_636281_2835",
+      "sample": "all_saved",
+      "powerlaw_slope_Fnu": -2,
+      "fully_extracted_comparable_channels": 102,
+      "channels_with_multiple_eligible_exposures": 102,
+      "median_error_ratio": 0.5807759949090003,
+      "median_conditional_error_reduction_percent": 41.922400509099965,
+      "error_ratio_range": [
+        0.5179925777110804,
+        0.6682720811833858
+      ]
+    },
+    {
+      "object_id": "LS9_9011_636281_2835",
+      "sample": "all_saved",
+      "powerlaw_slope_Fnu": 0,
+      "fully_extracted_comparable_channels": 102,
+      "channels_with_multiple_eligible_exposures": 102,
+      "median_error_ratio": 0.5811960109714137,
+      "median_conditional_error_reduction_percent": 41.88039890285863,
+      "error_ratio_range": [
+        0.5206160787324786,
+        0.6681311862586726
+      ]
+    },
+    {
+      "object_id": "LS9_9011_636281_2835",
+      "sample": "all_saved",
+      "powerlaw_slope_Fnu": 2,
+      "fully_extracted_comparable_channels": 102,
+      "channels_with_multiple_eligible_exposures": 102,
+      "median_error_ratio": 0.5819831687225522,
+      "median_conditional_error_reduction_percent": 41.80168312774478,
+      "error_ratio_range": [
+        0.5215194359225684,
+        0.6679877207744754
+      ]
+    },
+    {
+      "object_id": "LS9_9011_636281_2835",
+      "sample": "without_existing_chi2_flags",
+      "powerlaw_slope_Fnu": -2,
+      "fully_extracted_comparable_channels": 98,
+      "channels_with_multiple_eligible_exposures": 97,
+      "median_error_ratio": 0.5834232356567935,
+      "median_conditional_error_reduction_percent": 41.65767643432064,
+      "error_ratio_range": [
+        0.5179925777110804,
+        1.0
+      ]
+    },
+    {
+      "object_id": "LS9_9011_636281_2835",
+      "sample": "without_existing_chi2_flags",
+      "powerlaw_slope_Fnu": 0,
+      "fully_extracted_comparable_channels": 98,
+      "channels_with_multiple_eligible_exposures": 97,
+      "median_error_ratio": 0.5832087024641631,
+      "median_conditional_error_reduction_percent": 41.67912975358369,
+      "error_ratio_range": [
+        0.5206160787324786,
+        1.0
+      ]
+    },
+    {
+      "object_id": "LS9_9011_636281_2835",
+      "sample": "without_existing_chi2_flags",
+      "powerlaw_slope_Fnu": 2,
+      "fully_extracted_comparable_channels": 98,
+      "channels_with_multiple_eligible_exposures": 97,
+      "median_error_ratio": 0.5827853166356769,
+      "median_conditional_error_reduction_percent": 41.72146833643231,
+      "error_ratio_range": [
+        0.5215194359225684,
+        1.0
+      ]
+    }
+  ],
+  "science_gate_passed": false,
+  "method": "For each nominal channel, integrate each individual conditioned signed estimator kernel against (lambda/pivot)^slope. Fixed-shape scalar amplitude Fisher information is sum(response/error)^2. Compare rank0 alone against eligible saved repeats; only fully extracted channels summarized.",
+  "assumptions": [
+    "Spectral shape is fixed and known within each channel; slope uncertainty is not fitted or marginalized.",
+    "Supplied conditional flux noise is independent between exposures. Shared morphology, PSF, calibration and background systematics are omitted.",
+    "No observed source fluxes, reference redshifts, empirical error rescaling, or redshift tuning used.",
+    "All-saved and existing-chi2-flag-filtered strata reported separately; excluded baseline means comparison unavailable.",
+    "Conditioned kernels can have signed estimator weights; they are not physical nonnegative transmission curves."
+  ],
+  "interpretation": "This quantifies conditional precision/information gain under declared assumptions. It does not demonstrate improved absolute accuracy, validated uncertainty coverage, accepted spectra, or improved redshifts."
+}

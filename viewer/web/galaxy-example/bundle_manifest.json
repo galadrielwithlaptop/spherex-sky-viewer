@@ -1,0 +1,20 @@
+{
+  "files": {
+    "3689ef675a77fc2edbe7.png": "ce7a382d17173d598f8d6e0724b6daa24f2209825659a8787acaf4fe4086f725",
+    "9ddbba6807710cad881f.png": "cc55f85c370f4d71ade2b740434db039949d5fb5f4e54b9e7a7ba52677118abd",
+    "a4df5205aa7f9e76dccb.png": "79a93a10e599f6d65c832cc0844b4fa1feca6b5ed2fd33a57b47ffc4c2fd877b",
+    "adopted_inputs.json": "684261bbc3bd986fa7639a145a9acf9eba7ceccc6dc6e82a0d519b1d22076c5e",
+    "information_comparison.json": "775040464b4c85a8dc10cb9fdaca7a313f83df2ea642cf8ac2daa9b45d41af0c",
+    "LS9_9011_633415_2993_scene.png": "f8025eaa819ad52303b5c3f35cbf2009ea150eb3751014536be3fd9012b00902",
+    "LS9_9011_636281_2835_scene.png": "3b6a5facf1fbd3c1249c5f4c4f42b43950431fe2055c2aa0414e0e429076c7f5",
+    "measurements.csv": "01504e53e0449a10b9d578510d79ac6b45ba1b2e9a0052b1628f98e0fcfbcdc0",
+    "pixel_sensitivity.json": "52b0fc8623fab16e67161b0b832e5d09df31fc8516ead30ff04b6038c2c58488",
+    "provenance.json": "3e435acb87b2f97da057713bec53c5867969b6bfb08a1b749d691807972fc055",
+    "repeat_review.json": "4fadb675f0a0a700bf5f201a3ea30dc51bad361d4499597f5ad8bec0162da475",
+    "residual_source_localization.json": "3917750e70e94f6bc67c3351048420bd0d585863b0bd6301be9a5f2fcb320151",
+    "response_operators.npz": "93d4cd0a179bc86bdac2e8dad88dcdf764af92a22cee6b95d979b49f06c3947f",
+    "visual_review.json": "cf65b2d346f20c6f78c2db2de62c89d1843c5f1c1542e46e414b634484d758ba"
+  },
+  "scope": "Two real pilot galaxies. No source redshift or spectroscopic fitting prior in bundle.",
+  "science_gate_passed": false
+}

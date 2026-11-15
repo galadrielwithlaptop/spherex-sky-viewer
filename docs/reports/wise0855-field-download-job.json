@@ -1,0 +1,1698 @@
+{
+  "id": "9dc8d6d7fc573c36c301e9d6",
+  "parameters": {
+    "ra": 133.7951291667,
+    "dec": -7.2451472222,
+    "fov": 10.0
+  },
+  "state": "running",
+  "records": [
+    {
+      "id": "59cacf82a176747e1e0ecfa3",
+      "observation": "2025W19_1B_0116_1",
+      "detector": "SPHEREx-D3",
+      "state": "prepared",
+      "job_id": "66300fbac9f17141a3cda366"
+    },
+    {
+      "id": "b25ffa3e7f91864418e3b16b",
+      "observation": "2025W19_1B_0116_1",
+      "detector": "SPHEREx-D6",
+      "state": "prepared",
+      "job_id": "8bd7b92a57d63436c2df7a68"
+    },
+    {
+      "id": "065173613665449faf5506b3",
+      "observation": "2025W19_1B_0116_2",
+      "detector": "SPHEREx-D6",
+      "state": "prepared",
+      "job_id": "b9f902b783a87e484a6da41d"
+    },
+    {
+      "id": "1516c28282f80a968cd25de5",
+      "observation": "2025W19_1B_0116_2",
+      "detector": "SPHEREx-D3",
+      "state": "prepared",
+      "job_id": "573d2f0837530123d4eaa3f4"
+    },
+    {
+      "id": "2296258a8276f5b6242661bb",
+      "observation": "2025W19_1B_0138_1",
+      "detector": "SPHEREx-D3",
+      "state": "prepared",
+      "job_id": "fbc644e0dfad1512b27fdc31"
+    },
+    {
+      "id": "b08105640852afe97ea03bac",
+      "observation": "2025W19_1B_0138_1",
+      "detector": "SPHEREx-D6",
+      "state": "prepared",
+      "job_id": "6871ae8c8962bfe62795913f"
+    },
+    {
+      "id": "42933012e50917c769190b9d",
+      "observation": "2025W19_1B_0181_1",
+      "detector": "SPHEREx-D2",
+      "state": "prepared",
+      "job_id": "74e1856bae8819c21de96050"
+    },
+    {
+      "id": "e5243f476309b400720cf9ae",
+      "observation": "2025W19_1B_0181_1",
+      "detector": "SPHEREx-D5",
+      "state": "prepared",
+      "job_id": "32ac0af352670a8dae034290"
+    },
+    {
+      "id": "22bd9774ed0b391434538187",
+      "observation": "2025W19_1B_0181_2",
+      "detector": "SPHEREx-D5",
+      "state": "prepared",
+      "job_id": "b9b264a8546b689e2f95efc7"
+    },
+    {
+      "id": "ed76d4e019f615780de86609",
+      "observation": "2025W19_1B_0181_2",
+      "detector": "SPHEREx-D2",
+      "state": "prepared",
+      "job_id": "9d442c71af52bfc0ccc1443a"
+    },
+    {
+      "id": "09c7a0d28562982d7b76490b",
+      "observation": "2025W19_1B_0181_3",
+      "detector": "SPHEREx-D5",
+      "state": "loading",
+      "job_id": "b25fca0793b428d50cfcb7c3"
+    },
+    {
+      "id": "a4e78b579d5c77a5f9525a0b",
+      "observation": "2025W19_1B_0181_3",
+      "detector": "SPHEREx-D2",
+      "state": "pending"
+    },
+    {
+      "id": "42738c3ed71e9eb6a2b8770f",
+      "observation": "2025W19_1B_0181_4",
+      "detector": "SPHEREx-D2",
+      "state": "pending"
+    },
+    {
+      "id": "f5cb507b54d16e93c02b42d9",
+      "observation": "2025W19_1B_0181_4",
+      "detector": "SPHEREx-D5",
+      "state": "pending"
+    },
+    {
+      "id": "6748ea2d50f37ffc65c35e44",
+      "observation": "2025W19_1B_0231_1",
+      "detector": "SPHEREx-D5",
+      "state": "pending"
+    },
+    {
+      "id": "73c69c7fbd4f25191b5ffa63",
+      "observation": "2025W19_1B_0231_1",
+      "detector": "SPHEREx-D2",
+      "state": "pending"
+    },
+    {
+      "id": "3eee7aaf8cbb3cbae8e2b73b",
+      "observation": "2025W19_1B_0231_2",
+      "detector": "SPHEREx-D2",
+      "state": "pending"
+    },
+    {
+      "id": "e46180881d05a68870081c54",
+      "observation": "2025W19_1B_0231_2",
+      "detector": "SPHEREx-D5",
+      "state": "pending"
+    },
+    {
+      "id": "1433260b1ece0e5104bbe041",
+      "observation": "2025W19_1B_0231_3",
+      "detector": "SPHEREx-D5",
+      "state": "pending"
+    },
+    {
+      "id": "7ceef88d6a98febbcadeabf1",
+      "observation": "2025W19_1B_0231_3",
+      "detector": "SPHEREx-D2",
+      "state": "pending"
+    },
+    {
+      "id": "70081412830a9560b8a9d16a",
+      "observation": "2025W19_1B_0231_4",
+      "detector": "SPHEREx-D2",
+      "state": "pending"
+    },
+    {
+      "id": "efd0a02e8ef2b8940af5e87c",
+      "observation": "2025W19_1B_0231_4",
+      "detector": "SPHEREx-D5",
+      "state": "pending"
+    },
+    {
+      "id": "2aee6a793fc8b0969efbbbbf",
+      "observation": "2025W19_1B_0241_1",
+      "detector": "SPHEREx-D4",
+      "state": "pending"
+    },
+    {
+      "id": "c00f1baab5dbf1ca8cabe4d5",
+      "observation": "2025W19_1B_0241_1",
+      "detector": "SPHEREx-D1",
+      "state": "pending"
+    },
+    {
+      "id": "76ed708a1bd802d9257b4a2c",
+      "observation": "2025W19_1B_0241_2",
+      "detector": "SPHEREx-D1",
+      "state": "prepared",
+      "job_id": "dfac48a9bb51728369fe84a4"
+    },
+    {
+      "id": "bdc10b476859e947817f61e4",
+      "observation": "2025W19_1B_0241_2",
+      "detector": "SPHEREx-D4",
+      "state": "prepared",
+      "job_id": "fff712ac8ffe746bbb06d561"
+    },
+    {
+      "id": "6fa01e361dffdb586e2e35e5",
+      "observation": "2025W19_1B_0241_3",
+      "detector": "SPHEREx-D4",
+      "state": "pending"
+    },
+    {
+      "id": "ef410ffc96a3bccb37674e84",
+      "observation": "2025W19_1B_0241_3",
+      "detector": "SPHEREx-D1",
+      "state": "pending"
+    },
+    {
+      "id": "08f5da4825b691599a45fede",
+      "observation": "2025W19_1B_0241_4",
+      "detector": "SPHEREx-D4",
+      "state": "pending"
+    },
+    {
+      "id": "1638b3132f475159500fece0",
+      "observation": "2025W19_1B_0241_4",
+      "detector": "SPHEREx-D1",
+      "state": "pending"
+    },
+    {
+      "id": "2aa874445cad4ee85a5bcfeb",
+      "observation": "2025W44_2B_0305_1",
+      "detector": "SPHEREx-D1",
+      "state": "pending"
+    },
+    {
+      "id": "7ff82b3fa3a350bb84e488a8",
+      "observation": "2025W44_2B_0305_1",
+      "detector": "SPHEREx-D4",
+      "state": "pending"
+    },
+    {
+      "id": "06e6e974eb9975ec147516b4",
+      "observation": "2025W44_2B_0305_2",
+      "detector": "SPHEREx-D1",
+      "state": "pending"
+    },
+    {
+      "id": "334a10419fb9b484e8784b9a",
+      "observation": "2025W44_2B_0305_2",
+      "detector": "SPHEREx-D4",
+      "state": "pending"
+    },
+    {
+      "id": "13df8380d1e286d69b56d855",
+      "observation": "2025W44_2B_0305_3",
+      "detector": "SPHEREx-D4",
+      "state": "pending"
+    },
+    {
+      "id": "84f5dc97efd8cf1bb20b4689",
+      "observation": "2025W44_2B_0305_3",
+      "detector": "SPHEREx-D1",
+      "state": "pending"
+    },
+    {
+      "id": "4010a585f773c63bd976d727",
+      "observation": "2025W44_2B_0305_4",
+      "detector": "SPHEREx-D1",
+      "state": "pending"
+    },
+    {
+      "id": "8069f17d176b03e4e2634113",
+      "observation": "2025W44_2B_0305_4",
+      "detector": "SPHEREx-D4",
+      "state": "pending"
+    },
+    {
+      "id": "b95d41d2bd61001c9699b092",
+      "observation": "2025W44_2B_0321_1",
+      "detector": "SPHEREx-D1",
+      "state": "pending"
+    },
+    {
+      "id": "ebbf1e6247d08f8d3382aab0",
+      "observation": "2025W44_2B_0321_1",
+      "detector": "SPHEREx-D4",
+      "state": "pending"
+    },
+    {
+      "id": "2a6541e97c293cd51bfe6bea",
+      "observation": "2025W44_2B_0321_2",
+      "detector": "SPHEREx-D1",
+      "state": "pending"
+    },
+    {
+      "id": "c9d7fbc63337f6cbdd93387c",
+      "observation": "2025W44_2B_0321_2",
+      "detector": "SPHEREx-D4",
+      "state": "pending"
+    },
+    {
+      "id": "340579b6593c94a646633d35",
+      "observation": "2025W44_2B_0322_1",
+      "detector": "SPHEREx-D1",
+      "state": "pending"
+    },
+    {
+      "id": "9b6572520a2ad8e3bf3c6211",
+      "observation": "2025W44_2B_0322_1",
+      "detector": "SPHEREx-D4",
+      "state": "pending"
+    },
+    {
+      "id": "8afbda486d9c4826dd89d544",
+      "observation": "2025W44_2B_0322_2",
+      "detector": "SPHEREx-D4",
+      "state": "prepared",
+      "job_id": "acda28eec91da9d819697207"
+    },
+    {
+      "id": "91dd12f9727f4940734ef7f6",
+      "observation": "2025W44_2B_0322_2",
+      "detector": "SPHEREx-D1",
+      "state": "pending"
+    },
+    {
+      "id": "9f354601c53db38806a8e67c",
+      "observation": "2025W44_2B_0322_3",
+      "detector": "SPHEREx-D4",
+      "state": "pending"
+    },
+    {
+      "id": "bb43612e0c038013907d5ec3",
+      "observation": "2025W44_2B_0322_3",
+      "detector": "SPHEREx-D1",
+      "state": "pending"
+    },
+    {
+      "id": "080c502268275fb08a92f49e",
+      "observation": "2025W44_2B_0322_4",
+      "detector": "SPHEREx-D1",
+      "state": "pending"
+    },
+    {
+      "id": "6030bba79ac52a1a8d9f8276",
+      "observation": "2025W44_2B_0322_4",
+      "detector": "SPHEREx-D4",
+      "state": "pending"
+    },
+    {
+      "id": "7b5b5596319fd9c90450f691",
+      "observation": "2025W44_2B_0339_1",
+      "detector": "SPHEREx-D4",
+      "state": "pending"
+    },
+    {
+      "id": "eadc93add90fa5a0967a315c",
+      "observation": "2025W44_2B_0339_1",
+      "detector": "SPHEREx-D1",
+      "state": "pending"
+    },
+    {
+      "id": "22b82ab55c1aa4ec7698eefb",
+      "observation": "2025W44_2B_0339_2",
+      "detector": "SPHEREx-D4",
+      "state": "pending"
+    },
+    {
+      "id": "88737bf0335aea5ea37f1231",
+      "observation": "2025W44_2B_0339_2",
+      "detector": "SPHEREx-D1",
+      "state": "pending"
+    },
+    {
+      "id": "716de1c5655a255bae96bd5d",
+      "observation": "2025W45_1A_0095_4",
+      "detector": "SPHEREx-D1",
+      "state": "pending"
+    },
+    {
+      "id": "d67668fbfee4a460cb877332",
+      "observation": "2025W45_1A_0095_4",
+      "detector": "SPHEREx-D4",
+      "state": "pending"
+    },
+    {
+      "id": "8e9ae0d2f2943e4203bec797",
+      "observation": "2025W45_1A_0110_1",
+      "detector": "SPHEREx-D1",
+      "state": "pending"
+    },
+    {
+      "id": "d303cccb846d1ee45d91fb74",
+      "observation": "2025W45_1A_0110_1",
+      "detector": "SPHEREx-D4",
+      "state": "pending"
+    },
+    {
+      "id": "e218e0d4a2f54971186125dd",
+      "observation": "2025W45_1A_0110_2",
+      "detector": "SPHEREx-D4",
+      "state": "pending"
+    },
+    {
+      "id": "fa9371665c885a50232c96e5",
+      "observation": "2025W45_1A_0110_2",
+      "detector": "SPHEREx-D1",
+      "state": "pending"
+    },
+    {
+      "id": "58c0a3e2d8cf21649bc5f7d3",
+      "observation": "2025W45_1A_0110_3",
+      "detector": "SPHEREx-D1",
+      "state": "pending"
+    },
+    {
+      "id": "61d41b72fa7c37726059da2c",
+      "observation": "2025W45_1A_0110_3",
+      "detector": "SPHEREx-D4",
+      "state": "pending"
+    },
+    {
+      "id": "87e86d0f917593e9344b5b18",
+      "observation": "2025W45_1A_0110_4",
+      "detector": "SPHEREx-D1",
+      "state": "pending"
+    },
+    {
+      "id": "f2b5fbb4d374209ece752572",
+      "observation": "2025W45_1A_0110_4",
+      "detector": "SPHEREx-D4",
+      "state": "pending"
+    },
+    {
+      "id": "0be915de63bd817324299c0e",
+      "observation": "2025W45_1A_0153_1",
+      "detector": "SPHEREx-D4",
+      "state": "pending"
+    },
+    {
+      "id": "0e8bcea203190c646a789f4b",
+      "observation": "2025W45_1A_0153_1",
+      "detector": "SPHEREx-D1",
+      "state": "pending"
+    },
+    {
+      "id": "af3b6d841966721eeba353f2",
+      "observation": "2025W45_1A_0243_3",
+      "detector": "SPHEREx-D1",
+      "state": "pending"
+    },
+    {
+      "id": "09b12edeccd87d0749646434",
+      "observation": "2025W45_1A_0243_4",
+      "detector": "SPHEREx-D1",
+      "state": "pending"
+    },
+    {
+      "id": "762fa69aebb574c4923e6ae9",
+      "observation": "2025W45_1A_0243_4",
+      "detector": "SPHEREx-D4",
+      "state": "pending"
+    },
+    {
+      "id": "4b0e09482a0336f4cff76e6b",
+      "observation": "2025W45_1A_0273_1",
+      "detector": "SPHEREx-D4",
+      "state": "pending"
+    },
+    {
+      "id": "753584dc1d78cec6d5a9158c",
+      "observation": "2025W45_1A_0273_1",
+      "detector": "SPHEREx-D1",
+      "state": "pending"
+    },
+    {
+      "id": "4064a15b282a15e48298f42c",
+      "observation": "2025W45_1A_0273_2",
+      "detector": "SPHEREx-D4",
+      "state": "pending"
+    },
+    {
+      "id": "aec218b905a239349e533d5c",
+      "observation": "2025W45_1A_0273_2",
+      "detector": "SPHEREx-D1",
+      "state": "pending"
+    },
+    {
+      "id": "b25a0ee921afcf4c58b0654c",
+      "observation": "2025W45_1A_0273_3",
+      "detector": "SPHEREx-D4",
+      "state": "pending"
+    },
+    {
+      "id": "d1aaffc9fe3b6458493de59c",
+      "observation": "2025W45_1A_0273_3",
+      "detector": "SPHEREx-D1",
+      "state": "pending"
+    },
+    {
+      "id": "256c168eae04237e521667c1",
+      "observation": "2025W45_1A_0273_4",
+      "detector": "SPHEREx-D4",
+      "state": "pending"
+    },
+    {
+      "id": "e58050e2fc2bd289cfc80c4b",
+      "observation": "2025W45_1A_0273_4",
+      "detector": "SPHEREx-D1",
+      "state": "pending"
+    },
+    {
+      "id": "13b11bc5ba40ea6fc65a95ff",
+      "observation": "2025W45_1A_0317_1",
+      "detector": "SPHEREx-D4",
+      "state": "pending"
+    },
+    {
+      "id": "5499cb4184506d3d89572072",
+      "observation": "2025W45_1A_0317_1",
+      "detector": "SPHEREx-D1",
+      "state": "pending"
+    },
+    {
+      "id": "7221dc2f8d3f578d7c509488",
+      "observation": "2025W45_2A_0164_1",
+      "detector": "SPHEREx-D5",
+      "state": "pending"
+    },
+    {
+      "id": "bac4b91a4cae3059a7080885",
+      "observation": "2025W45_2A_0164_1",
+      "detector": "SPHEREx-D2",
+      "state": "pending"
+    },
+    {
+      "id": "3944b7864a1bec832cb2aa71",
+      "observation": "2025W45_2A_0164_2",
+      "detector": "SPHEREx-D2",
+      "state": "pending"
+    },
+    {
+      "id": "e0e1cbc447bbdd1c450e74d9",
+      "observation": "2025W45_2A_0164_2",
+      "detector": "SPHEREx-D5",
+      "state": "pending"
+    },
+    {
+      "id": "3b99c7b87466bf70bebef57f",
+      "observation": "2025W45_2A_0164_3",
+      "detector": "SPHEREx-D5",
+      "state": "pending"
+    },
+    {
+      "id": "a1d976d048a438598ac7f163",
+      "observation": "2025W45_2A_0164_3",
+      "detector": "SPHEREx-D2",
+      "state": "pending"
+    },
+    {
+      "id": "8f4640236bae65cc1c3bd012",
+      "observation": "2025W45_2A_0164_4",
+      "detector": "SPHEREx-D2",
+      "state": "pending"
+    },
+    {
+      "id": "fd3aa4d6e7daf98dabd051d7",
+      "observation": "2025W45_2A_0164_4",
+      "detector": "SPHEREx-D5",
+      "state": "pending"
+    },
+    {
+      "id": "83c6516bf569c6d4acbf9e7c",
+      "observation": "2025W45_2A_0192_1",
+      "detector": "SPHEREx-D2",
+      "state": "pending"
+    },
+    {
+      "id": "c58122c83e3037f421e3a5ce",
+      "observation": "2025W45_2A_0192_1",
+      "detector": "SPHEREx-D5",
+      "state": "pending"
+    },
+    {
+      "id": "cec6bb6f8de471c640496105",
+      "observation": "2025W45_2A_0192_2",
+      "detector": "SPHEREx-D5",
+      "state": "pending"
+    },
+    {
+      "id": "e87eeca5522c1ac2cd9a7581",
+      "observation": "2025W45_2A_0192_2",
+      "detector": "SPHEREx-D2",
+      "state": "pending"
+    },
+    {
+      "id": "1f93e917f968b89877f4fc65",
+      "observation": "2025W45_2A_0278_1",
+      "detector": "SPHEREx-D2",
+      "state": "pending"
+    },
+    {
+      "id": "d929c761aa753751572409d7",
+      "observation": "2025W45_2A_0278_1",
+      "detector": "SPHEREx-D5",
+      "state": "pending"
+    },
+    {
+      "id": "6890fee04a3ec6831269ea15",
+      "observation": "2025W45_2A_0278_2",
+      "detector": "SPHEREx-D2",
+      "state": "pending"
+    },
+    {
+      "id": "710b0905606a57e92545b702",
+      "observation": "2025W45_2A_0278_2",
+      "detector": "SPHEREx-D5",
+      "state": "pending"
+    },
+    {
+      "id": "179785082514f4bb34acbe08",
+      "observation": "2025W45_2A_0278_3",
+      "detector": "SPHEREx-D2",
+      "state": "pending"
+    },
+    {
+      "id": "305867596ca2ccceb64a6449",
+      "observation": "2025W45_2A_0278_3",
+      "detector": "SPHEREx-D5",
+      "state": "pending"
+    },
+    {
+      "id": "a53233e2df283a5378755265",
+      "observation": "2025W45_2A_0278_4",
+      "detector": "SPHEREx-D2",
+      "state": "pending"
+    },
+    {
+      "id": "dab8b6409617b69ec8ac7371",
+      "observation": "2025W45_2A_0278_4",
+      "detector": "SPHEREx-D5",
+      "state": "pending"
+    },
+    {
+      "id": "16792508f48b05f258174d60",
+      "observation": "2025W45_2A_0292_1",
+      "detector": "SPHEREx-D2",
+      "state": "pending"
+    },
+    {
+      "id": "f4743ee4719a6b4713dc8c65",
+      "observation": "2025W45_2A_0292_1",
+      "detector": "SPHEREx-D5",
+      "state": "pending"
+    },
+    {
+      "id": "af9259388ff5c1e5954a17cf",
+      "observation": "2025W45_2A_0292_2",
+      "detector": "SPHEREx-D5",
+      "state": "pending"
+    },
+    {
+      "id": "d0cb6d8e89c817d93978fa69",
+      "observation": "2025W45_2A_0292_2",
+      "detector": "SPHEREx-D2",
+      "state": "pending"
+    },
+    {
+      "id": "9b5fb75d6b8ced21321de829",
+      "observation": "2025W45_2A_0292_3",
+      "detector": "SPHEREx-D5",
+      "state": "pending"
+    },
+    {
+      "id": "b8ae350933271c92e22f1e42",
+      "observation": "2025W45_2A_0292_3",
+      "detector": "SPHEREx-D2",
+      "state": "pending"
+    },
+    {
+      "id": "461e4884a1b51514af80f0c5",
+      "observation": "2025W45_2A_0308_1",
+      "detector": "SPHEREx-D2",
+      "state": "pending"
+    },
+    {
+      "id": "6fb4014d3325b4103e8f9aaa",
+      "observation": "2025W45_2A_0308_1",
+      "detector": "SPHEREx-D5",
+      "state": "pending"
+    },
+    {
+      "id": "67c77352861607a38bfb1bf5",
+      "observation": "2025W45_2A_0308_2",
+      "detector": "SPHEREx-D2",
+      "state": "pending"
+    },
+    {
+      "id": "d400214338efcebb24c41294",
+      "observation": "2025W45_2A_0308_2",
+      "detector": "SPHEREx-D5",
+      "state": "pending"
+    },
+    {
+      "id": "ba7c6e92e7326d27e0314435",
+      "observation": "2025W45_2A_0308_3",
+      "detector": "SPHEREx-D2",
+      "state": "pending"
+    },
+    {
+      "id": "d57af75ee2201c6b8a47d154",
+      "observation": "2025W45_2A_0308_3",
+      "detector": "SPHEREx-D5",
+      "state": "pending"
+    },
+    {
+      "id": "14fa3ddd5e461ccc98d202c0",
+      "observation": "2025W45_2A_0308_4",
+      "detector": "SPHEREx-D5",
+      "state": "pending"
+    },
+    {
+      "id": "39773a121482d4cc0658d7be",
+      "observation": "2025W45_2A_0308_4",
+      "detector": "SPHEREx-D2",
+      "state": "pending"
+    },
+    {
+      "id": "6ea448223b6c38e37b861fcc",
+      "observation": "2025W45_2A_0367_1",
+      "detector": "SPHEREx-D5",
+      "state": "pending"
+    },
+    {
+      "id": "9e13b7388ad2165775444444",
+      "observation": "2025W45_2A_0367_1",
+      "detector": "SPHEREx-D2",
+      "state": "pending"
+    },
+    {
+      "id": "4432acd4afc90868d16bdd69",
+      "observation": "2025W46_1A_0075_4",
+      "detector": "SPHEREx-D6",
+      "state": "pending"
+    },
+    {
+      "id": "a82d2bf46a91dba8f6cdce70",
+      "observation": "2025W46_1A_0075_4",
+      "detector": "SPHEREx-D3",
+      "state": "pending"
+    },
+    {
+      "id": "601a83d00439d50b6e3101d6",
+      "observation": "2025W46_1A_0076_1",
+      "detector": "SPHEREx-D3",
+      "state": "pending"
+    },
+    {
+      "id": "a8314bb5d499d3c92e5cccbb",
+      "observation": "2025W46_1A_0076_1",
+      "detector": "SPHEREx-D6",
+      "state": "pending"
+    },
+    {
+      "id": "071bfb7e9ca044f5199d2eed",
+      "observation": "2025W46_1A_0076_2",
+      "detector": "SPHEREx-D6",
+      "state": "pending"
+    },
+    {
+      "id": "763c5a7d1adb668e3c898892",
+      "observation": "2025W46_1A_0076_2",
+      "detector": "SPHEREx-D3",
+      "state": "pending"
+    },
+    {
+      "id": "580be84b70893c58086d0910",
+      "observation": "2025W46_1A_0076_3",
+      "detector": "SPHEREx-D6",
+      "state": "pending"
+    },
+    {
+      "id": "c2699b85b94cba826f6c5956",
+      "observation": "2025W46_1A_0076_3",
+      "detector": "SPHEREx-D3",
+      "state": "pending"
+    },
+    {
+      "id": "2ee76dc44e832d35eb21b4cd",
+      "observation": "2025W46_1A_0090_1",
+      "detector": "SPHEREx-D6",
+      "state": "pending"
+    },
+    {
+      "id": "c85cd26bbd934113725be815",
+      "observation": "2025W46_1A_0090_1",
+      "detector": "SPHEREx-D3",
+      "state": "pending"
+    },
+    {
+      "id": "5ab893d4da5259f2b593ef50",
+      "observation": "2025W46_1A_0090_2",
+      "detector": "SPHEREx-D6",
+      "state": "pending"
+    },
+    {
+      "id": "f8201bc7bc5049882d270302",
+      "observation": "2025W46_1A_0090_2",
+      "detector": "SPHEREx-D3",
+      "state": "pending"
+    },
+    {
+      "id": "69a5c99578366266330f2a4e",
+      "observation": "2025W46_1A_0090_3",
+      "detector": "SPHEREx-D6",
+      "state": "pending"
+    },
+    {
+      "id": "b3dfa32bf57e87a8cd6c5614",
+      "observation": "2025W46_1A_0090_3",
+      "detector": "SPHEREx-D3",
+      "state": "pending"
+    },
+    {
+      "id": "08a074058027a1a16ff1fb47",
+      "observation": "2025W46_1A_0108_1",
+      "detector": "SPHEREx-D2",
+      "state": "pending"
+    },
+    {
+      "id": "daffdf15ce565c1114f328ae",
+      "observation": "2025W46_1A_0108_1",
+      "detector": "SPHEREx-D5",
+      "state": "pending"
+    },
+    {
+      "id": "3a94de44b04412e593851c7e",
+      "observation": "2025W46_1A_0238_1",
+      "detector": "SPHEREx-D3",
+      "state": "pending"
+    },
+    {
+      "id": "d644349ae0b56f05c907710d",
+      "observation": "2025W46_1A_0238_1",
+      "detector": "SPHEREx-D6",
+      "state": "pending"
+    },
+    {
+      "id": "166ea79da744aef4c5cc4f16",
+      "observation": "2025W46_1A_0238_2",
+      "detector": "SPHEREx-D6",
+      "state": "pending"
+    },
+    {
+      "id": "3a8d48b22c273ae9cef150ca",
+      "observation": "2025W46_1A_0238_2",
+      "detector": "SPHEREx-D3",
+      "state": "pending"
+    },
+    {
+      "id": "55f42b389f2a9b77c7b72656",
+      "observation": "2025W46_2A_0214_1",
+      "detector": "SPHEREx-D3",
+      "state": "pending"
+    },
+    {
+      "id": "d807332c084ec3ee1e2b1340",
+      "observation": "2025W46_2A_0214_1",
+      "detector": "SPHEREx-D6",
+      "state": "pending"
+    },
+    {
+      "id": "708dd9d65ee70ea20b118196",
+      "observation": "2025W46_2A_0214_2",
+      "detector": "SPHEREx-D6",
+      "state": "pending"
+    },
+    {
+      "id": "d579fbec4f6a4f915643ce49",
+      "observation": "2025W46_2A_0214_2",
+      "detector": "SPHEREx-D3",
+      "state": "pending"
+    },
+    {
+      "id": "306d2a08046758d2944e80f5",
+      "observation": "2025W46_2A_0214_3",
+      "detector": "SPHEREx-D6",
+      "state": "pending"
+    },
+    {
+      "id": "cb4ab5c8bc2e65b788c179a4",
+      "observation": "2025W46_2A_0214_3",
+      "detector": "SPHEREx-D3",
+      "state": "pending"
+    },
+    {
+      "id": "855ab00eb1f5c39d37e1a860",
+      "observation": "2025W46_2A_0214_4",
+      "detector": "SPHEREx-D6",
+      "state": "pending"
+    },
+    {
+      "id": "cc9b4d5efae1da9c396427b0",
+      "observation": "2025W46_2A_0214_4",
+      "detector": "SPHEREx-D3",
+      "state": "pending"
+    },
+    {
+      "id": "266cc782c9c921131dace548",
+      "observation": "2025W46_2A_0226_1",
+      "detector": "SPHEREx-D6",
+      "state": "pending"
+    },
+    {
+      "id": "642e23392c61151c724612ac",
+      "observation": "2025W46_2A_0226_1",
+      "detector": "SPHEREx-D3",
+      "state": "pending"
+    },
+    {
+      "id": "69ec5fe9e8abac6981588606",
+      "observation": "2025W46_2A_0226_2",
+      "detector": "SPHEREx-D6",
+      "state": "pending"
+    },
+    {
+      "id": "ca74bb46812e3186c62ec828",
+      "observation": "2025W46_2A_0226_2",
+      "detector": "SPHEREx-D3",
+      "state": "pending"
+    },
+    {
+      "id": "18ed82b6bfe6f5662fae2b6e",
+      "observation": "2025W46_2A_0226_3",
+      "detector": "SPHEREx-D6",
+      "state": "pending"
+    },
+    {
+      "id": "8d7ff7d278952f287bdc854d",
+      "observation": "2025W46_2A_0226_3",
+      "detector": "SPHEREx-D3",
+      "state": "pending"
+    },
+    {
+      "id": "278f0b80c56107c50f3f4284",
+      "observation": "2025W46_2A_0226_4",
+      "detector": "SPHEREx-D6",
+      "state": "pending"
+    },
+    {
+      "id": "d6420b42703c4d2af4dcf29a",
+      "observation": "2025W46_2A_0226_4",
+      "detector": "SPHEREx-D3",
+      "state": "pending"
+    },
+    {
+      "id": "d00527995108865418344756",
+      "observation": "2025W46_2A_0289_1",
+      "detector": "SPHEREx-D3",
+      "state": "pending"
+    },
+    {
+      "id": "d399e4b838668fc34ab02294",
+      "observation": "2025W46_2A_0289_1",
+      "detector": "SPHEREx-D6",
+      "state": "pending"
+    },
+    {
+      "id": "9ed8e9f9ddb006e8cfafc0d7",
+      "observation": "2025W46_2A_0289_2",
+      "detector": "SPHEREx-D3",
+      "state": "pending"
+    },
+    {
+      "id": "2ddd82fd65206269b2370289",
+      "observation": "2025W50_1A_0804_1",
+      "detector": "SPHEREx-D1",
+      "state": "pending"
+    },
+    {
+      "id": "bf040e75752275e3baf9856a",
+      "observation": "2025W50_1A_0804_1",
+      "detector": "SPHEREx-D4",
+      "state": "pending"
+    },
+    {
+      "id": "c71afd5fe4bb2f97b6b38463",
+      "observation": "2025W50_2A_0086_1",
+      "detector": "SPHEREx-D2",
+      "state": "pending"
+    },
+    {
+      "id": "e37584ca18e2a4dded450cf8",
+      "observation": "2025W50_2A_0086_1",
+      "detector": "SPHEREx-D5",
+      "state": "pending"
+    },
+    {
+      "id": "2f69398bbebc23f2076cbda0",
+      "observation": "2025W50_2A_0164_1",
+      "detector": "SPHEREx-D2",
+      "state": "pending"
+    },
+    {
+      "id": "8aef30bb0468489034150cb8",
+      "observation": "2025W50_2A_0164_1",
+      "detector": "SPHEREx-D5",
+      "state": "pending"
+    },
+    {
+      "id": "40ec0e464fdcdc0d0b68ff03",
+      "observation": "2025W50_2A_0232_1",
+      "detector": "SPHEREx-D6",
+      "state": "pending"
+    },
+    {
+      "id": "b87e92e69420013f38f065d9",
+      "observation": "2025W50_2A_0232_1",
+      "detector": "SPHEREx-D3",
+      "state": "pending"
+    },
+    {
+      "id": "0e81d07debfea09383597f20",
+      "observation": "2025W50_2A_0254_1",
+      "detector": "SPHEREx-D3",
+      "state": "pending"
+    },
+    {
+      "id": "481a8f555d311a538d20c8a6",
+      "observation": "2025W50_2A_0254_1",
+      "detector": "SPHEREx-D6",
+      "state": "pending"
+    },
+    {
+      "id": "6f88d5973f9b4d7216412d60",
+      "observation": "2025W50_2A_0374_1",
+      "detector": "SPHEREx-D2",
+      "state": "pending"
+    },
+    {
+      "id": "799450d3edf0d764d2945fa6",
+      "observation": "2025W50_2A_0374_1",
+      "detector": "SPHEREx-D5",
+      "state": "pending"
+    },
+    {
+      "id": "21a305a1560f4f3d74a583bc",
+      "observation": "2025W50_2A_0391_1",
+      "detector": "SPHEREx-D5",
+      "state": "pending"
+    },
+    {
+      "id": "eb9ad0937992f8528b4c2f3c",
+      "observation": "2025W50_2A_0391_1",
+      "detector": "SPHEREx-D2",
+      "state": "pending"
+    },
+    {
+      "id": "1e6e462a1d6880571ebd966e",
+      "observation": "2025W50_2A_0428_1",
+      "detector": "SPHEREx-D3",
+      "state": "pending"
+    },
+    {
+      "id": "3fe7fcd9f55bfe23927dc2a8",
+      "observation": "2025W50_2A_0428_1",
+      "detector": "SPHEREx-D6",
+      "state": "pending"
+    },
+    {
+      "id": "4a1a70222f8a310a4d4883f6",
+      "observation": "2025W50_2A_0479_1",
+      "detector": "SPHEREx-D2",
+      "state": "pending"
+    },
+    {
+      "id": "dbb03c89340bf15912fe253d",
+      "observation": "2025W50_2A_0479_1",
+      "detector": "SPHEREx-D5",
+      "state": "pending"
+    },
+    {
+      "id": "33040f11d35505c4e57e38c1",
+      "observation": "2025W50_2A_0512_1",
+      "detector": "SPHEREx-D5",
+      "state": "pending"
+    },
+    {
+      "id": "7ac43c07600061ef578a1c1f",
+      "observation": "2025W50_2A_0512_1",
+      "detector": "SPHEREx-D2",
+      "state": "pending"
+    },
+    {
+      "id": "58390aa93c3142590feafc67",
+      "observation": "2026W17_1B_0227_2",
+      "detector": "SPHEREx-D3",
+      "state": "pending"
+    },
+    {
+      "id": "79ad233baf786e452cbd3da5",
+      "observation": "2026W17_1B_0227_2",
+      "detector": "SPHEREx-D6",
+      "state": "pending"
+    },
+    {
+      "id": "2f2f7ff75d1167d09da4a4ab",
+      "observation": "2026W17_1B_0227_3",
+      "detector": "SPHEREx-D3",
+      "state": "pending"
+    },
+    {
+      "id": "c23db6b919e28ddad9e5a5be",
+      "observation": "2026W17_1B_0227_3",
+      "detector": "SPHEREx-D6",
+      "state": "pending"
+    },
+    {
+      "id": "3240a65df05e559389a6749d",
+      "observation": "2026W17_1B_0227_4",
+      "detector": "SPHEREx-D6",
+      "state": "pending"
+    },
+    {
+      "id": "ed021c749a73dfcbfb72f829",
+      "observation": "2026W17_1B_0227_4",
+      "detector": "SPHEREx-D3",
+      "state": "pending"
+    },
+    {
+      "id": "59e741002857642e185e209c",
+      "observation": "2026W17_1B_0507_1",
+      "detector": "SPHEREx-D3",
+      "state": "pending"
+    },
+    {
+      "id": "de07e807a62c0733bb6ef4f4",
+      "observation": "2026W17_1B_0507_1",
+      "detector": "SPHEREx-D6",
+      "state": "pending"
+    },
+    {
+      "id": "91878601644986e35d4e4005",
+      "observation": "2026W17_1B_0507_2",
+      "detector": "SPHEREx-D6",
+      "state": "pending"
+    },
+    {
+      "id": "dea2f0178fa0350c84ebb061",
+      "observation": "2026W17_1B_0507_2",
+      "detector": "SPHEREx-D3",
+      "state": "pending"
+    },
+    {
+      "id": "9074be5d9cb1612e335092ca",
+      "observation": "2026W17_1B_0507_3",
+      "detector": "SPHEREx-D3",
+      "state": "pending"
+    },
+    {
+      "id": "dc3a647e9f036ffbe9b82b63",
+      "observation": "2026W17_1B_0507_3",
+      "detector": "SPHEREx-D6",
+      "state": "pending"
+    },
+    {
+      "id": "03cdaa54d2357babdba2138a",
+      "observation": "2026W17_1B_0634_1",
+      "detector": "SPHEREx-D6",
+      "state": "pending"
+    },
+    {
+      "id": "c4052b17159544185811dbb5",
+      "observation": "2026W17_1B_0634_1",
+      "detector": "SPHEREx-D3",
+      "state": "pending"
+    },
+    {
+      "id": "0b21363f7595b5d05e843e04",
+      "observation": "2026W17_1B_0634_2",
+      "detector": "SPHEREx-D6",
+      "state": "pending"
+    },
+    {
+      "id": "3ade782f6ec2c95f76fb604d",
+      "observation": "2026W17_1B_0634_2",
+      "detector": "SPHEREx-D3",
+      "state": "pending"
+    },
+    {
+      "id": "6688d5a4a707a431509e37cf",
+      "observation": "2026W17_1B_0634_3",
+      "detector": "SPHEREx-D3",
+      "state": "pending"
+    },
+    {
+      "id": "fd4300b146f3b147790e2e4a",
+      "observation": "2026W17_1B_0634_3",
+      "detector": "SPHEREx-D6",
+      "state": "pending"
+    },
+    {
+      "id": "28d3a5618e741b5189d657f5",
+      "observation": "2026W17_1B_0634_4",
+      "detector": "SPHEREx-D6",
+      "state": "pending"
+    },
+    {
+      "id": "6f24e97b96680b0cbc685ab8",
+      "observation": "2026W17_1B_0634_4",
+      "detector": "SPHEREx-D3",
+      "state": "pending"
+    },
+    {
+      "id": "09e0b653bcec9d98b29f9df0",
+      "observation": "2026W17_2A_0591_1",
+      "detector": "SPHEREx-D6",
+      "state": "pending"
+    },
+    {
+      "id": "90402e705e6c00cb28d36452",
+      "observation": "2026W17_2A_0591_1",
+      "detector": "SPHEREx-D3",
+      "state": "pending"
+    },
+    {
+      "id": "8f2953446bed63ee7ebf8320",
+      "observation": "2026W17_2A_0609_1",
+      "detector": "SPHEREx-D6",
+      "state": "pending"
+    },
+    {
+      "id": "d30ed90b978571d2c9095aa0",
+      "observation": "2026W17_2A_0609_1",
+      "detector": "SPHEREx-D3",
+      "state": "pending"
+    },
+    {
+      "id": "edfb6fa0a23445f4c1e78e29",
+      "observation": "2026W17_2A_0609_2",
+      "detector": "SPHEREx-D3",
+      "state": "pending"
+    },
+    {
+      "id": "fb21495acbd5d9d0687d5b31",
+      "observation": "2026W17_2A_0609_2",
+      "detector": "SPHEREx-D6",
+      "state": "pending"
+    },
+    {
+      "id": "3f88def4ae4d4c34b775128b",
+      "observation": "2026W17_2A_0692_1",
+      "detector": "SPHEREx-D3",
+      "state": "pending"
+    },
+    {
+      "id": "7c49795283259e2e395d2f82",
+      "observation": "2026W17_2A_0692_1",
+      "detector": "SPHEREx-D6",
+      "state": "pending"
+    },
+    {
+      "id": "8bd1c04b752d1e816d4e51c8",
+      "observation": "2026W17_2A_0692_2",
+      "detector": "SPHEREx-D6",
+      "state": "pending"
+    },
+    {
+      "id": "a4f586651182de774775779a",
+      "observation": "2026W17_2A_0692_2",
+      "detector": "SPHEREx-D3",
+      "state": "pending"
+    },
+    {
+      "id": "520a38945b07f0b965d93bef",
+      "observation": "2026W18_2A_0065_1",
+      "detector": "SPHEREx-D6",
+      "state": "pending"
+    },
+    {
+      "id": "f46aafe80f51984662506df8",
+      "observation": "2026W18_2A_0065_1",
+      "detector": "SPHEREx-D3",
+      "state": "pending"
+    },
+    {
+      "id": "a5dcbb073db26936ae389b9b",
+      "observation": "2026W18_2A_0247_1",
+      "detector": "SPHEREx-D5",
+      "state": "pending"
+    },
+    {
+      "id": "c2cd4c9093f0dcd33d3970b9",
+      "observation": "2026W18_2A_0247_1",
+      "detector": "SPHEREx-D2",
+      "state": "pending"
+    },
+    {
+      "id": "2f47f790b3ba1112c65276e9",
+      "observation": "2026W18_2A_0247_2",
+      "detector": "SPHEREx-D5",
+      "state": "pending"
+    },
+    {
+      "id": "53bae17f13e8731804f65ec3",
+      "observation": "2026W18_2A_0247_2",
+      "detector": "SPHEREx-D2",
+      "state": "pending"
+    },
+    {
+      "id": "39f01588d421d2f8fd2d40a6",
+      "observation": "2026W18_2A_0247_3",
+      "detector": "SPHEREx-D2",
+      "state": "pending"
+    },
+    {
+      "id": "eecd0ddb3ce89735a6215a85",
+      "observation": "2026W18_2A_0247_3",
+      "detector": "SPHEREx-D5",
+      "state": "pending"
+    },
+    {
+      "id": "0f2a10d578cf8114d387e028",
+      "observation": "2026W18_2A_0247_4",
+      "detector": "SPHEREx-D5",
+      "state": "pending"
+    },
+    {
+      "id": "1c4192998446906f24e1e2ac",
+      "observation": "2026W18_2A_0247_4",
+      "detector": "SPHEREx-D2",
+      "state": "pending"
+    },
+    {
+      "id": "30b644f72336507ea31776f4",
+      "observation": "2026W18_2A_0264_1",
+      "detector": "SPHEREx-D4",
+      "state": "pending"
+    },
+    {
+      "id": "9e4429b28ea048605386b598",
+      "observation": "2026W18_2A_0264_1",
+      "detector": "SPHEREx-D1",
+      "state": "pending"
+    },
+    {
+      "id": "88c5d4fd272145dd12ece617",
+      "observation": "2026W18_2A_0264_2",
+      "detector": "SPHEREx-D1",
+      "state": "pending"
+    },
+    {
+      "id": "3c40fc15bf1dca729cc48594",
+      "observation": "2026W18_2A_0424_2",
+      "detector": "SPHEREx-D4",
+      "state": "pending"
+    },
+    {
+      "id": "f8271dc6f7eea3df07c0a75d",
+      "observation": "2026W18_2A_0424_2",
+      "detector": "SPHEREx-D1",
+      "state": "pending"
+    },
+    {
+      "id": "449ccbd86cd8de0f18a24474",
+      "observation": "2026W18_2A_0424_3",
+      "detector": "SPHEREx-D4",
+      "state": "pending"
+    },
+    {
+      "id": "48fc599269f9fdd513046b0d",
+      "observation": "2026W18_2A_0424_3",
+      "detector": "SPHEREx-D1",
+      "state": "pending"
+    },
+    {
+      "id": "1d2f7d0b5282a71795c66d9c",
+      "observation": "2026W18_2A_0424_4",
+      "detector": "SPHEREx-D1",
+      "state": "pending"
+    },
+    {
+      "id": "919d0c62ae752a425a1ebf41",
+      "observation": "2026W18_2A_0424_4",
+      "detector": "SPHEREx-D4",
+      "state": "pending"
+    },
+    {
+      "id": "5f7fcaf5e5f62d058538e611",
+      "observation": "2026W18_2A_0441_1",
+      "detector": "SPHEREx-D5",
+      "state": "pending"
+    },
+    {
+      "id": "cfd6619415ff126f49db8841",
+      "observation": "2026W18_2A_0441_1",
+      "detector": "SPHEREx-D2",
+      "state": "pending"
+    },
+    {
+      "id": "3177e228b1fb57436f32bc68",
+      "observation": "2026W18_2A_0441_2",
+      "detector": "SPHEREx-D5",
+      "state": "pending"
+    },
+    {
+      "id": "d232636136ff7da4e1344f73",
+      "observation": "2026W18_2A_0441_2",
+      "detector": "SPHEREx-D2",
+      "state": "pending"
+    },
+    {
+      "id": "21571ebf82a3f8ab4736c6aa",
+      "observation": "2026W18_2A_0519_1",
+      "detector": "SPHEREx-D2",
+      "state": "pending"
+    },
+    {
+      "id": "750921ec1db4ba5a7d2d58a2",
+      "observation": "2026W18_2A_0519_1",
+      "detector": "SPHEREx-D5",
+      "state": "pending"
+    },
+    {
+      "id": "500472c3a965aa76331b9891",
+      "observation": "2026W18_2A_0519_2",
+      "detector": "SPHEREx-D5",
+      "state": "pending"
+    },
+    {
+      "id": "e63f7692473d05b49556c84a",
+      "observation": "2026W18_2A_0519_2",
+      "detector": "SPHEREx-D2",
+      "state": "pending"
+    },
+    {
+      "id": "8285e53c2bba44a18fa538a7",
+      "observation": "2026W18_2A_0663_1",
+      "detector": "SPHEREx-D5",
+      "state": "pending"
+    },
+    {
+      "id": "fbf3db236dbb4d2f40618762",
+      "observation": "2026W18_2A_0663_1",
+      "detector": "SPHEREx-D2",
+      "state": "pending"
+    },
+    {
+      "id": "761680e2e280eac62b9fadb8",
+      "observation": "2026W18_2A_0663_2",
+      "detector": "SPHEREx-D5",
+      "state": "pending"
+    },
+    {
+      "id": "af53e9f1da7ae783a50bcc79",
+      "observation": "2026W18_2A_0663_2",
+      "detector": "SPHEREx-D2",
+      "state": "pending"
+    },
+    {
+      "id": "26134b2c8c42d1616b2850ac",
+      "observation": "2026W18_2A_0684_1",
+      "detector": "SPHEREx-D1",
+      "state": "pending"
+    },
+    {
+      "id": "f2ba5c5ecb62276ce121bda9",
+      "observation": "2026W18_2A_0684_1",
+      "detector": "SPHEREx-D4",
+      "state": "pending"
+    },
+    {
+      "id": "82548811e1a302c1a22d6e27",
+      "observation": "2026W18_2A_0684_2",
+      "detector": "SPHEREx-D1",
+      "state": "pending"
+    },
+    {
+      "id": "ef6cd3a38fe01cf99a3cf059",
+      "observation": "2026W18_2A_0684_2",
+      "detector": "SPHEREx-D4",
+      "state": "pending"
+    },
+    {
+      "id": "400640834c527d56b86d4126",
+      "observation": "2026W18_2A_0684_3",
+      "detector": "SPHEREx-D4",
+      "state": "pending"
+    },
+    {
+      "id": "d22c9df7987a46d35503ab7d",
+      "observation": "2026W18_2A_0684_3",
+      "detector": "SPHEREx-D1",
+      "state": "pending"
+    },
+    {
+      "id": "62b14e5a4a270df920ed0253",
+      "observation": "2026W18_2A_0684_4",
+      "detector": "SPHEREx-D4",
+      "state": "pending"
+    },
+    {
+      "id": "6de1b72183917bb0785a099b",
+      "observation": "2026W18_2A_0684_4",
+      "detector": "SPHEREx-D1",
+      "state": "pending"
+    },
+    {
+      "id": "0fc4250d7ef952930316a0b4",
+      "observation": "2026W19_1A_0034_1",
+      "detector": "SPHEREx-D2",
+      "state": "pending"
+    },
+    {
+      "id": "5cd692fb644fae87d8017543",
+      "observation": "2026W19_1A_0034_1",
+      "detector": "SPHEREx-D5",
+      "state": "pending"
+    },
+    {
+      "id": "7dff450c05ef8938bcdd808e",
+      "observation": "2026W19_1A_0201_1",
+      "detector": "SPHEREx-D4",
+      "state": "pending"
+    },
+    {
+      "id": "a1fc7c6290e1280c4d895834",
+      "observation": "2026W19_1A_0201_1",
+      "detector": "SPHEREx-D1",
+      "state": "pending"
+    },
+    {
+      "id": "a9a7df9b04acddeae7e027dc",
+      "observation": "2026W19_1A_0227_1",
+      "detector": "SPHEREx-D4",
+      "state": "pending"
+    },
+    {
+      "id": "cb2d9d2ada8a74ea9452f595",
+      "observation": "2026W19_1A_0227_1",
+      "detector": "SPHEREx-D1",
+      "state": "pending"
+    },
+    {
+      "id": "a2953b51f80c5079c2f7c971",
+      "observation": "2026W19_1A_0227_2",
+      "detector": "SPHEREx-D1",
+      "state": "pending"
+    },
+    {
+      "id": "e995951b88895ec06df9ecb6",
+      "observation": "2026W19_1A_0227_2",
+      "detector": "SPHEREx-D4",
+      "state": "pending"
+    },
+    {
+      "id": "0ed4ecf2a35c2b746ece8b81",
+      "observation": "2026W19_1A_0493_1",
+      "detector": "SPHEREx-D1",
+      "state": "pending"
+    },
+    {
+      "id": "33ab268dbefc0ca72226399b",
+      "observation": "2026W19_1A_0493_1",
+      "detector": "SPHEREx-D4",
+      "state": "pending"
+    },
+    {
+      "id": "67ad09cbc4b5491fd3db0a9b",
+      "observation": "2026W19_1A_0594_1",
+      "detector": "SPHEREx-D1",
+      "state": "pending"
+    },
+    {
+      "id": "9af0e05c1ff7323011d94569",
+      "observation": "2026W19_1A_0594_1",
+      "detector": "SPHEREx-D4",
+      "state": "pending"
+    },
+    {
+      "id": "1a0602f589df0dbff837fba4",
+      "observation": "2026W19_1A_0594_2",
+      "detector": "SPHEREx-D4",
+      "state": "pending"
+    },
+    {
+      "id": "7d02c1d7750e7561fb6fcbbd",
+      "observation": "2026W19_1A_0594_2",
+      "detector": "SPHEREx-D1",
+      "state": "pending"
+    },
+    {
+      "id": "d614bc8d035ebac9197bd6a4",
+      "observation": "2026W19_2A_0568_1",
+      "detector": "SPHEREx-D3",
+      "state": "pending"
+    },
+    {
+      "id": "e943115780d9fd23b2c0051e",
+      "observation": "2026W19_2A_0568_1",
+      "detector": "SPHEREx-D6",
+      "state": "pending"
+    },
+    {
+      "id": "6b932ee7fc64d097287462c1",
+      "observation": "2026W19_2A_0651_1",
+      "detector": "SPHEREx-D3",
+      "state": "pending"
+    },
+    {
+      "id": "97637494b1346cd5715fc263",
+      "observation": "2026W19_2A_0651_1",
+      "detector": "SPHEREx-D6",
+      "state": "pending"
+    },
+    {
+      "id": "5721ab39bb3d1c2947e2d1b0",
+      "observation": "2026W19_2A_0782_1",
+      "detector": "SPHEREx-D6",
+      "state": "pending"
+    },
+    {
+      "id": "5b8e5e14c24add11b9011e32",
+      "observation": "2026W19_2A_0782_1",
+      "detector": "SPHEREx-D3",
+      "state": "pending"
+    },
+    {
+      "id": "1c068cce85123fc131c56826",
+      "observation": "2026W19_2A_0952_1",
+      "detector": "SPHEREx-D3",
+      "state": "pending"
+    },
+    {
+      "id": "2d93ae0bfc017d6f13fbd8c4",
+      "observation": "2026W19_2A_0952_1",
+      "detector": "SPHEREx-D6",
+      "state": "pending"
+    },
+    {
+      "id": "52d4e0f49cdf3f8f28472540",
+      "observation": "2026W20_1A_0033_1",
+      "detector": "SPHEREx-D6",
+      "state": "pending"
+    },
+    {
+      "id": "b52edb5b1387c9935b388601",
+      "observation": "2026W20_1A_0033_1",
+      "detector": "SPHEREx-D3",
+      "state": "pending"
+    },
+    {
+      "id": "81576a8f8223b1842fce44f4",
+      "observation": "2026W20_1A_0214_1",
+      "detector": "SPHEREx-D5",
+      "state": "pending"
+    },
+    {
+      "id": "863d9b963f2670dcb53be2fe",
+      "observation": "2026W20_1A_0214_1",
+      "detector": "SPHEREx-D2",
+      "state": "pending"
+    },
+    {
+      "id": "30d4fc14c49594e56dc2a78d",
+      "observation": "2026W20_1A_0455_1",
+      "detector": "SPHEREx-D5",
+      "state": "pending"
+    },
+    {
+      "id": "b34f4fbc6509f252c48689be",
+      "observation": "2026W20_1A_0455_1",
+      "detector": "SPHEREx-D2",
+      "state": "pending"
+    },
+    {
+      "id": "09215b98ce58dfd1ea48f9c0",
+      "observation": "2026W20_1A_0728_1",
+      "detector": "SPHEREx-D5",
+      "state": "pending"
+    },
+    {
+      "id": "e5307b8dcfe946ce20f5b04d",
+      "observation": "2026W20_1A_0728_1",
+      "detector": "SPHEREx-D2",
+      "state": "pending"
+    },
+    {
+      "id": "63b14e8bf874bfffa4d6aff2",
+      "observation": "2026W20_1A_0939_1",
+      "detector": "SPHEREx-D5",
+      "state": "pending"
+    },
+    {
+      "id": "9c7d102a0d5859320e8c566c",
+      "observation": "2026W20_1A_0939_1",
+      "detector": "SPHEREx-D2",
+      "state": "pending"
+    },
+    {
+      "id": "401ca1ccfe1d92688c65d652",
+      "observation": "2026W20_1A_1166_1",
+      "detector": "SPHEREx-D2",
+      "state": "pending"
+    },
+    {
+      "id": "a4469944953373ec7bd4c0a3",
+      "observation": "2026W20_1A_1166_1",
+      "detector": "SPHEREx-D5",
+      "state": "pending"
+    }
+  ],
+  "sequence_id": "6a20c60b4b96d790d2f9bdc0",
+  "requested": 277,
+  "updated_unix": 1794741932.010375,
+  "current_observation": "2025W19_1B_0181_3",
+  "counts": {
+    "prepared": 13,
+    "failed": 0,
+    "loading": 1,
+    "pending": 263
+  },
+  "snapshot_utc": "2026-11-15T11:25:44.198183+00:00"
+}

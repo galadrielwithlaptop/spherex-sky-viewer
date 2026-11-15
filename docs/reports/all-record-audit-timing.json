@@ -1,0 +1,11 @@
+{
+  "local_audit_elapsed_ms": 1523.5386000131257,
+  "records": 277,
+  "counts": {
+    "not_attempted": 275,
+    "prepared": 2
+  },
+  "pixel_downloads": 0,
+  "header_downloads": 0,
+  "measurement": "One localhost request, not a distribution or hosted performance guarantee"
+}

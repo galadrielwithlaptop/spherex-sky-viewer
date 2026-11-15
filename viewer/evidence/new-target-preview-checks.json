@@ -1,0 +1,50 @@
+[
+  {
+    "target": "RW Aur",
+    "job_id": "c6a532216847ad74618c90b1",
+    "frames": [
+      {
+        "utc": "2025-09-01T10:04:17.501Z",
+        "wavelength_um": 1.0683151354598301,
+        "valid_fraction": 0.941619873046875
+      },
+      {
+        "utc": "2026-09-09T21:42:13.853Z",
+        "wavelength_um": 0.9743631648071044,
+        "valid_fraction": 0.9430084228515625
+      }
+    ],
+    "images_decode": true,
+    "warnings": [
+      "Exploratory imagery, not a variability detection.",
+      "Wavelength lookup is visualization precision; matching centres/widths does not establish identical response.",
+      "No PSF matching or astrometric validation. Differences can be instrumental.",
+      "Coadds are unweighted means of available frames; no propagated uncertainty.",
+      "Conservative masks may remove usable pixels. Proper motion is not propagated."
+    ]
+  },
+  {
+    "target": "R Dra",
+    "job_id": "6d5e19193379f16aada7e93d",
+    "frames": [
+      {
+        "utc": "2025-05-16T22:56:23.626Z",
+        "wavelength_um": 1.655330342238583,
+        "valid_fraction": 0.977203369140625
+      },
+      {
+        "utc": "2026-06-12T20:39:42.192Z",
+        "wavelength_um": 1.9553132907097035,
+        "valid_fraction": 0.971771240234375
+      }
+    ],
+    "images_decode": true,
+    "warnings": [
+      "Exploratory imagery, not a variability detection.",
+      "Wavelength lookup is visualization precision; matching centres/widths does not establish identical response.",
+      "No PSF matching or astrometric validation. Differences can be instrumental.",
+      "Coadds are unweighted means of available frames; no propagated uncertainty.",
+      "Conservative masks may remove usable pixels. Proper motion is not propagated."
+    ]
+  }
+]

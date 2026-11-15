@@ -1,0 +1,144 @@
+{
+  "frames": [
+    {
+      "id": "2b08e41a24747366648f50c5",
+      "observation": "2025W35_2A_0233_2",
+      "detector": "SPHEREx-D1",
+      "collection": "spherex_dr1",
+      "mjd": 60916.72348,
+      "utc": "2025-08-29T17:21:48.672Z",
+      "wavelength_um": 1.0468733407493196,
+      "bandwidth_um": 0.02804276095903684,
+      "valid_fraction": 0.98370361328125,
+      "native_flagged_fraction": 0.032249134948096884,
+      "flag_counts": {
+        "TRANSIENT": 55,
+        "OVERFLOW": 0,
+        "SUR_ERROR": 39,
+        "NONFUNC": 23,
+        "DICHROIC": 0,
+        "MISSING_DATA": 0,
+        "HOT": 0,
+        "COLD": 4,
+        "FULLSAMPLE": 0,
+        "PHANMISS": 0,
+        "NONLINEAR": 0,
+        "PERSIST": 21,
+        "OUTLIER": 0,
+        "CROSSTALK": 67,
+        "SOURCE": 7225,
+        "GHOST": 0,
+        "GHOST_FPA": 0,
+        "GHOST_EXT": 0,
+        "STREAK": 0,
+        "BLOOM": 19,
+        "SNOWBALL": 0,
+        "HALO": 104
+      },
+      "cutout_sha256": "f5dd17626e6a066ca2a9217b0654a0f1e767092d42b74a98bee276de92bd9245",
+      "source_url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W35_2A/l2b-v27-2026-231/1/level2_2025W35_2A_0233_2D1_spx_l2b-v27-2026-231.fits",
+      "fits_key": "e6b9ddcb373823fcd61ca6f7",
+      "mask_policy": "all flags except informational SOURCE/FULLSAMPLE excluded; finite IMAGE/ZODI and positive VARIANCE",
+      "processing": "IMAGE \u2212 ZODI; nearest-pixel WCS projection; north up / east left; no PSF homogenization",
+      "image": "/products/4d769ea56c18422f3f0a5a26/0.png",
+      "index": 0
+    },
+    {
+      "id": "60351d76e18fc1a69fc833a6",
+      "observation": "2026W11_1A_0556_3",
+      "detector": "SPHEREx-D1",
+      "collection": "spherex_dr1",
+      "mjd": 61110.637284,
+      "utc": "2026-03-11T15:17:41.338Z",
+      "wavelength_um": 1.050872354488161,
+      "bandwidth_um": 0.02768588501966347,
+      "valid_fraction": 0.9634246826171875,
+      "native_flagged_fraction": 0.03432525951557094,
+      "flag_counts": {
+        "TRANSIENT": 46,
+        "OVERFLOW": 0,
+        "SUR_ERROR": 32,
+        "NONFUNC": 25,
+        "DICHROIC": 0,
+        "MISSING_DATA": 0,
+        "HOT": 0,
+        "COLD": 3,
+        "FULLSAMPLE": 0,
+        "PHANMISS": 0,
+        "NONLINEAR": 0,
+        "PERSIST": 46,
+        "OUTLIER": 0,
+        "CROSSTALK": 69,
+        "SOURCE": 7225,
+        "GHOST": 0,
+        "GHOST_FPA": 0,
+        "GHOST_EXT": 0,
+        "STREAK": 0,
+        "BLOOM": 7,
+        "SNOWBALL": 0,
+        "HALO": 109
+      },
+      "cutout_sha256": "a35103b7ab8ef2858af43d605c55b7b8dc8f89161b27f752d054577a1ce782ae",
+      "source_url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2026W11_1A/l2b-v27-2026-232/1/level2_2026W11_1A_0556_3D1_spx_l2b-v27-2026-232.fits",
+      "fits_key": "c0872afb70f978b1eea65922",
+      "mask_policy": "all flags except informational SOURCE/FULLSAMPLE excluded; finite IMAGE/ZODI and positive VARIANCE",
+      "processing": "IMAGE \u2212 ZODI; nearest-pixel WCS projection; north up / east left; no PSF homogenization",
+      "image": "/products/4d769ea56c18422f3f0a5a26/1.png",
+      "index": 1
+    }
+  ],
+  "groups": [
+    {
+      "indices": [
+        0,
+        1
+      ],
+      "wavelength_um": 1.0468733407493196,
+      "coadd": "/products/4d769ea56c18422f3f0a5a26/coadd-0.png",
+      "difference": "/products/4d769ea56c18422f3f0a5a26/difference-0.png",
+      "animation": "/products/4d769ea56c18422f3f0a5a26/blink-0.gif"
+    }
+  ],
+  "errors": [],
+  "planning": {
+    "sampled": 12,
+    "near_matching": 2,
+    "target_wavelength_um": 1.0468733407493196,
+    "method": "All pairs pass approximate centre/width rules; same detector/release. Longest time baseline chosen."
+  },
+  "recipe_version": "4-wavelength-planned",
+  "parameters": {
+    "ra": 269.4520769586187,
+    "dec": 4.69336496657667,
+    "fov": 5.0
+  },
+  "render_grid": {
+    "projection": "TAN",
+    "size": 256,
+    "crpix_fits": [
+      128.5,
+      128.5
+    ],
+    "crval_deg": [
+      269.4520769586187,
+      4.69336496657667
+    ],
+    "cdelt_deg": [
+      -0.0003255208333333333,
+      -0.0003255208333333333
+    ]
+  },
+  "stretch": {
+    "low": 0.0973586827516556,
+    "high": 5.5538788586854935,
+    "units": "MJy/sr",
+    "method": "common asinh"
+  },
+  "warnings": [
+    "Exploratory imagery, not a variability detection.",
+    "Wavelength lookup is visualization precision; matching centres/widths does not establish identical response.",
+    "No PSF matching or astrometric validation. Differences can be instrumental.",
+    "Coadds are unweighted means of available frames; no propagated uncertainty.",
+    "Conservative masks may remove usable pixels. Proper motion is not propagated."
+  ]
+}

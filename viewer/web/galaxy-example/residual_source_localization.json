@@ -1,0 +1,245 @@
+{
+  "scope": "Channel58 first galaxy, all three selected exposures",
+  "rows": [
+    {
+      "rank": 1,
+      "job_id": "3689ef675a77fc2edbe7",
+      "peaks": [
+        {
+          "pixel": [
+            10,
+            20
+          ],
+          "normalized_residual": 79.8432669865836,
+          "distance_to_target_pixels": 6.934752458134624,
+          "nearest_catalogue_id": "LS9_9011_636837_1238",
+          "nearest_catalogue_type": "REX",
+          "nearest_distance_pixels": 0.4940006405619401,
+          "proper_motion_applied": false
+        },
+        {
+          "pixel": [
+            7,
+            19
+          ],
+          "normalized_residual": 3.6190280702078073,
+          "distance_to_target_pixels": 8.647289498125218,
+          "nearest_catalogue_id": "LS9_9011_636837_1330",
+          "nearest_catalogue_type": "PSF",
+          "nearest_distance_pixels": 0.637739055502782,
+          "proper_motion_applied": true
+        },
+        {
+          "pixel": [
+            14,
+            7
+          ],
+          "normalized_residual": -3.3968509506005464,
+          "distance_to_target_pixels": 7.768148640233711,
+          "nearest_catalogue_id": "LS9_9011_636281_2971",
+          "nearest_catalogue_type": "EXP",
+          "nearest_distance_pixels": 1.6688350472025866,
+          "proper_motion_applied": false
+        },
+        {
+          "pixel": [
+            22,
+            3
+          ],
+          "normalized_residual": -3.083385971320921,
+          "distance_to_target_pixels": 13.923044350845485,
+          "nearest_catalogue_id": "LS9_9011_636281_2849",
+          "nearest_catalogue_type": "REX",
+          "nearest_distance_pixels": 1.4225112311079613,
+          "proper_motion_applied": false
+        },
+        {
+          "pixel": [
+            16,
+            2
+          ],
+          "normalized_residual": -2.8919628171179648,
+          "distance_to_target_pixels": 12.834361215301504,
+          "nearest_catalogue_id": "LS9_9011_636281_3017",
+          "nearest_catalogue_type": "PSF",
+          "nearest_distance_pixels": 1.3161360794680408,
+          "proper_motion_applied": false
+        }
+      ],
+      "largest_pixel_fraction_of_residual_power": 0.7967520679142077,
+      "total_residual_power": 8001.168167381913,
+      "peak_native_pixel": [
+        1263,
+        1216
+      ],
+      "peak_archive_values": {
+        "IMAGE": 8.176789283752441,
+        "FLAGS": 2097152.0,
+        "VARIANCE": 0.0074888309463858604,
+        "ZODI": 0.05017734318971634
+      }
+    },
+    {
+      "rank": 2,
+      "job_id": "9ddbba6807710cad881f",
+      "peaks": [
+        {
+          "pixel": [
+            13,
+            16
+          ],
+          "normalized_residual": 65.14291485214878,
+          "distance_to_target_pixels": 2.207754493992975,
+          "nearest_catalogue_id": "LS9_9011_636281_2835",
+          "nearest_catalogue_type": "REX",
+          "nearest_distance_pixels": 2.2077545104779226,
+          "proper_motion_applied": false
+        },
+        {
+          "pixel": [
+            25,
+            21
+          ],
+          "normalized_residual": -5.624130004946027,
+          "distance_to_target_pixels": 11.873708740360934,
+          "nearest_catalogue_id": "LS9_9011_636281_2597",
+          "nearest_catalogue_type": "REX",
+          "nearest_distance_pixels": 2.599718544933896,
+          "proper_motion_applied": false
+        },
+        {
+          "pixel": [
+            24,
+            7
+          ],
+          "normalized_residual": -4.224358537858655,
+          "distance_to_target_pixels": 12.023649552985802,
+          "nearest_catalogue_id": "LS9_9011_636281_3023",
+          "nearest_catalogue_type": "PSF",
+          "nearest_distance_pixels": 1.3446466298239104,
+          "proper_motion_applied": false
+        },
+        {
+          "pixel": [
+            8,
+            27
+          ],
+          "normalized_residual": -3.7175388946493215,
+          "distance_to_target_pixels": 13.983986782896565,
+          "nearest_catalogue_id": "LS9_9011_636837_813",
+          "nearest_catalogue_type": "PSF",
+          "nearest_distance_pixels": 0.7460723076101203,
+          "proper_motion_applied": false
+        },
+        {
+          "pixel": [
+            6,
+            10
+          ],
+          "normalized_residual": -3.562200041374833,
+          "distance_to_target_pixels": 10.087615449593708,
+          "nearest_catalogue_id": "LS9_9011_636837_1344",
+          "nearest_catalogue_type": "REX",
+          "nearest_distance_pixels": 0.9173225672258627,
+          "proper_motion_applied": false
+        }
+      ],
+      "largest_pixel_fraction_of_residual_power": 0.8659521985763058,
+      "total_residual_power": 4900.500700166961,
+      "peak_native_pixel": [
+        761,
+        1215
+      ],
+      "peak_archive_values": {
+        "IMAGE": 4.158271789550781,
+        "FLAGS": 2097152.0,
+        "VARIANCE": 0.003934467677026987,
+        "ZODI": 0.045953419059515
+      }
+    },
+    {
+      "rank": 0,
+      "job_id": "a4df5205aa7f9e76dccb",
+      "peaks": [
+        {
+          "pixel": [
+            8,
+            3
+          ],
+          "normalized_residual": -7.963357503923456,
+          "distance_to_target_pixels": 13.96583247094929,
+          "nearest_catalogue_id": "LS9_9011_636837_813",
+          "nearest_catalogue_type": "PSF",
+          "nearest_distance_pixels": 1.2722816753731467,
+          "proper_motion_applied": false
+        },
+        {
+          "pixel": [
+            22,
+            27
+          ],
+          "normalized_residual": -4.036217966074124,
+          "distance_to_target_pixels": 13.819260395030549,
+          "nearest_catalogue_id": "LS9_9011_636281_3220",
+          "nearest_catalogue_type": "REX",
+          "nearest_distance_pixels": 1.5538770845829695,
+          "proper_motion_applied": false
+        },
+        {
+          "pixel": [
+            4,
+            1
+          ],
+          "normalized_residual": -3.2829453597331555,
+          "distance_to_target_pixels": 17.869861978720284,
+          "nearest_catalogue_id": "LS9_9011_636837_760",
+          "nearest_catalogue_type": "REX",
+          "nearest_distance_pixels": 1.6073756543606792,
+          "proper_motion_applied": false
+        },
+        {
+          "pixel": [
+            23,
+            5
+          ],
+          "normalized_residual": 3.0063897187946766,
+          "distance_to_target_pixels": 12.882485239865236,
+          "nearest_catalogue_id": "LS9_9011_636837_1264",
+          "nearest_catalogue_type": "EXP",
+          "nearest_distance_pixels": 0.9780873766176277,
+          "proper_motion_applied": false
+        },
+        {
+          "pixel": [
+            28,
+            25
+          ],
+          "normalized_residual": -2.782813308683807,
+          "distance_to_target_pixels": 16.353671623270017,
+          "nearest_catalogue_id": "LS9_9011_636281_3340",
+          "nearest_catalogue_type": "PSF",
+          "nearest_distance_pixels": 0.8602736092794815,
+          "proper_motion_applied": true
+        }
+      ],
+      "largest_pixel_fraction_of_residual_power": 0.08001044528573348,
+      "total_residual_power": 792.5847995074394,
+      "peak_native_pixel": [
+        1153,
+        1200
+      ],
+      "peak_archive_values": {
+        "IMAGE": 0.02192898839712143,
+        "FLAGS": 0.0,
+        "VARIANCE": 3.4522494388511404e-05,
+        "ZODI": 0.045452482998371124
+      }
+    }
+  ],
+  "science_gate_passed": false,
+  "limitations": [
+    "Nearest projected catalogue entry is a diagnostic association, not a confirmed cause or identity.",
+    "Same simple proper-motion convention as extraction; observer parallax/registration not verified.",
+    "Residual pixel significance is conditional, not target brightness bias."
+  ]
+}

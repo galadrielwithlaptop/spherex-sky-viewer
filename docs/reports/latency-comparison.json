@@ -1,0 +1,381 @@
+{
+  "baseline_generated_utc": "2026-11-14T20:52:15.388520+00:00",
+  "current_generated_utc": "2026-11-14T20:55:49.909444+00:00",
+  "caveat": "Sequential local runs, not a controlled internet/load study. Current payload includes additional provenance fields. Archive availability is not an application speed guarantee.",
+  "cases": [
+    {
+      "case": "target WISE0855",
+      "baseline_p50_ms": 68.47345001006033,
+      "current_p50_ms": 31.259900002623908,
+      "baseline_p95_ms": 82.91609999287175,
+      "current_p95_ms": 36.1517649886082
+    },
+    {
+      "case": "target Barnard's Star",
+      "baseline_p50_ms": 64.51140000717714,
+      "current_p50_ms": 25.550400008796714,
+      "baseline_p95_ms": 77.68367999669863,
+      "current_p95_ms": 41.47607501363382
+    },
+    {
+      "case": "target eps Ind B",
+      "baseline_p50_ms": 73.4221000020625,
+      "current_p50_ms": 42.024800000945106,
+      "baseline_p95_ms": 90.46624001202872,
+      "current_p95_ms": 49.773970010573976
+    },
+    {
+      "case": "target RW Aur",
+      "baseline_p50_ms": 67.93609999294858,
+      "current_p50_ms": 26.54945000540465,
+      "baseline_p95_ms": 83.96265499759465,
+      "current_p95_ms": 45.09334999893326
+    },
+    {
+      "case": "target R Dra",
+      "baseline_p50_ms": 81.37349998287391,
+      "current_p50_ms": 39.32159999385476,
+      "baseline_p95_ms": 96.22109999909298,
+      "current_p95_ms": 64.74776498507708
+    },
+    {
+      "case": "detector 1",
+      "baseline_p50_ms": 48.90049999812618,
+      "current_p50_ms": 30.787150011747144,
+      "baseline_p95_ms": 64.9165200185962,
+      "current_p95_ms": 38.32637001032708
+    },
+    {
+      "case": "detector 2",
+      "baseline_p50_ms": 48.362699992139824,
+      "current_p50_ms": 19.379549979930744,
+      "baseline_p95_ms": 64.14925500866957,
+      "current_p95_ms": 32.20474999106955
+    },
+    {
+      "case": "detector 3",
+      "baseline_p50_ms": 46.41845001606271,
+      "current_p50_ms": 19.86544999817852,
+      "baseline_p95_ms": 99.98831002449201,
+      "current_p95_ms": 40.483650004898664
+    },
+    {
+      "case": "detector 4",
+      "baseline_p50_ms": 40.214949985966086,
+      "current_p50_ms": 18.02664999559056,
+      "baseline_p95_ms": 59.207389983930646,
+      "current_p95_ms": 35.60495000274387
+    },
+    {
+      "case": "detector 5",
+      "baseline_p50_ms": 36.02474999206606,
+      "current_p50_ms": 11.880549995112233,
+      "baseline_p95_ms": 51.23873501579511,
+      "current_p95_ms": 36.07076499465621
+    },
+    {
+      "case": "detector 6",
+      "baseline_p50_ms": 46.18984999251552,
+      "current_p50_ms": 17.472350009484217,
+      "baseline_p95_ms": 56.58229499385925,
+      "current_p95_ms": 34.44432500109542
+    },
+    {
+      "case": "FOV 1 arcmin",
+      "baseline_p50_ms": 70.54990000324324,
+      "current_p50_ms": 25.901699991663918,
+      "baseline_p95_ms": 83.44285000493983,
+      "current_p95_ms": 40.3214849968208
+    },
+    {
+      "case": "FOV 10 arcmin",
+      "baseline_p50_ms": 48.96734999783803,
+      "current_p50_ms": 23.894750003819354,
+      "baseline_p95_ms": 67.95287999848371,
+      "current_p95_ms": 41.751684992050286
+    },
+    {
+      "case": "FOV 30 arcmin",
+      "baseline_p50_ms": 54.931799983023666,
+      "current_p50_ms": 23.023200003081,
+      "baseline_p95_ms": 71.81060500879539,
+      "current_p95_ms": 33.59335000277497
+    },
+    {
+      "case": "FOV 60 arcmin",
+      "baseline_p50_ms": 56.6654499998549,
+      "current_p50_ms": 26.696549990447238,
+      "baseline_p95_ms": 69.75997499539517,
+      "current_p95_ms": 35.10007500444772
+    },
+    {
+      "case": "date interval",
+      "baseline_p50_ms": 54.80109999189153,
+      "current_p50_ms": 28.408300000592135,
+      "baseline_p95_ms": 68.2840149893309,
+      "current_p95_ms": 39.683914998022374
+    },
+    {
+      "case": "descending order",
+      "baseline_p50_ms": 69.79355000657961,
+      "current_p50_ms": 20.213499999954365,
+      "baseline_p95_ms": 86.69973500800552,
+      "current_p95_ms": 36.14915498910706
+    },
+    {
+      "case": "collection spherex_dr1",
+      "baseline_p50_ms": 43.9693500084104,
+      "current_p50_ms": 24.683700015884824,
+      "baseline_p95_ms": 60.5165499917348,
+      "current_p95_ms": 36.76668501284439
+    },
+    {
+      "case": "collection spherex_qr3",
+      "baseline_p50_ms": 18.56075000250712,
+      "current_p50_ms": 7.006050014751963,
+      "baseline_p95_ms": 34.51511001039762,
+      "current_p95_ms": 26.816180012247063
+    },
+    {
+      "case": "collection spherex_dr1_deep",
+      "baseline_p50_ms": 29.35625000100117,
+      "current_p50_ms": 17.334650008706376,
+      "baseline_p95_ms": 38.65112999919803,
+      "current_p95_ms": 32.463709996955004
+    },
+    {
+      "case": "collection spherex_qr3_deep",
+      "baseline_p50_ms": 24.500900006387383,
+      "current_p50_ms": 11.93504998809658,
+      "baseline_p95_ms": 36.96246998151764,
+      "current_p95_ms": 30.368350008211564
+    },
+    {
+      "case": "page size 1",
+      "baseline_p50_ms": 56.14699999568984,
+      "current_p50_ms": 18.701250010053627,
+      "baseline_p95_ms": 72.75433001195779,
+      "current_p95_ms": 38.03554999176413
+    },
+    {
+      "case": "page size 500",
+      "baseline_p50_ms": 70.28129999525845,
+      "current_p50_ms": 31.64860000833869,
+      "baseline_p95_ms": 86.86906001821626,
+      "current_p95_ms": 52.94353000790579
+    },
+    {
+      "case": "gzip metadata",
+      "baseline_p50_ms": 68.41495000116993,
+      "current_p50_ms": 34.70029999152757,
+      "baseline_p95_ms": 81.70688999671256,
+      "current_p95_ms": 50.88922998838825
+    },
+    {
+      "case": "unknown indexed region",
+      "baseline_p50_ms": 53.229600001941435,
+      "current_p50_ms": 16.264349993434735,
+      "baseline_p95_ms": 65.96876499679638,
+      "current_p95_ms": 30.34786498756148
+    },
+    {
+      "case": "status",
+      "baseline_p50_ms": 15.67839999916032,
+      "current_p50_ms": 5.46494999434799,
+      "baseline_p95_ms": 27.964790000987705,
+      "current_p95_ms": 24.991359995328825
+    },
+    {
+      "case": "options",
+      "baseline_p50_ms": 14.241200013202615,
+      "current_p50_ms": 1.7934999923454598,
+      "baseline_p95_ms": 47.252275013306644,
+      "current_p95_ms": 23.067270003957677
+    },
+    {
+      "case": "targets",
+      "baseline_p50_ms": 4.090250018634833,
+      "current_p50_ms": 2.108450004016049,
+      "baseline_p95_ms": 24.523915009922348,
+      "current_p95_ms": 3.305584991176156
+    },
+    {
+      "case": "known coverage",
+      "baseline_p50_ms": 45.6183000060264,
+      "current_p50_ms": 21.087250002892688,
+      "baseline_p95_ms": 56.856805000279564,
+      "current_p95_ms": 35.9487299923785
+    },
+    {
+      "case": "OpenAPI contract",
+      "baseline_p50_ms": 17.033600001013838,
+      "current_p50_ms": 2.8948499966645613,
+      "baseline_p95_ms": 24.701384997752033,
+      "current_p95_ms": 24.921115004690364
+    },
+    {
+      "case": "API documentation",
+      "baseline_p50_ms": 15.07320000382606,
+      "current_p50_ms": 1.8027500045718625,
+      "baseline_p95_ms": 17.72110998717835,
+      "current_p95_ms": 18.66220500814962
+    },
+    {
+      "case": "gaia overlay metadata",
+      "baseline_p50_ms": 7.788250019075349,
+      "current_p50_ms": 15.270349991624244,
+      "baseline_p95_ms": 22.16309000796173,
+      "current_p95_ms": 23.723320016870275
+    },
+    {
+      "case": "wise overlay metadata",
+      "baseline_p50_ms": 7.826400003978051,
+      "current_p50_ms": 12.258799994015135,
+      "baseline_p95_ms": 22.883050006930716,
+      "current_p95_ms": 26.368335002916872
+    },
+    {
+      "case": "cached sequence acceptance",
+      "baseline_p50_ms": 14.135799996438436,
+      "current_p50_ms": 7.908850006060675,
+      "baseline_p95_ms": 32.6752150154789,
+      "current_p95_ms": 31.649509996350393
+    },
+    {
+      "case": "cached sequence status",
+      "baseline_p50_ms": 15.051949987537228,
+      "current_p50_ms": 1.9260999979451299,
+      "baseline_p95_ms": 25.804405004600994,
+      "current_p95_ms": 13.537559998803783
+    },
+    {
+      "case": "cached manifest.json",
+      "baseline_p50_ms": 12.29520000924822,
+      "current_p50_ms": 3.272699992521666,
+      "baseline_p95_ms": 22.12813000805909,
+      "current_p95_ms": 17.37842500151601
+    },
+    {
+      "case": "cached 0.png",
+      "baseline_p50_ms": 12.946150003699586,
+      "current_p50_ms": 9.956849986338057,
+      "baseline_p95_ms": 24.255989977973517,
+      "current_p95_ms": 21.531080006388954
+    },
+    {
+      "case": "cached coadd-0.png",
+      "baseline_p50_ms": 16.31614999496378,
+      "current_p50_ms": 16.35865001298953,
+      "baseline_p95_ms": 27.141884999582544,
+      "current_p95_ms": 28.512585017597303
+    },
+    {
+      "case": "cached difference-0.png",
+      "baseline_p50_ms": 16.247649997239932,
+      "current_p50_ms": 1.658400011365302,
+      "baseline_p95_ms": 18.33257999678608,
+      "current_p95_ms": 17.6114099987899
+    },
+    {
+      "case": "cached blink-0.gif",
+      "baseline_p50_ms": 15.660699995351024,
+      "current_p50_ms": 4.486750010983087,
+      "baseline_p95_ms": 17.83403498266125,
+      "current_p95_ms": 22.999595019791744
+    },
+    {
+      "case": "cached aligned.npz",
+      "baseline_p50_ms": 16.658349995850585,
+      "current_p50_ms": 16.82520000031218,
+      "baseline_p95_ms": 19.84171000367497,
+      "current_p95_ms": 24.72729497967521
+    },
+    {
+      "case": "cached native FITS",
+      "baseline_p50_ms": 15.316100005293265,
+      "current_p50_ms": 8.814249988063239,
+      "baseline_p95_ms": 17.798344983020797,
+      "current_p95_ms": 24.068254999292552
+    }
+  ],
+  "baseline_archive_metadata": [
+    {
+      "elapsed_ms": 91242.69919999642,
+      "wire_bytes": 108437,
+      "decoded_bytes": 108437,
+      "status": 200,
+      "server_timing": "app;dur=91199.322",
+      "cache": "local_index",
+      "coverage_complete": false,
+      "phase": "initial_request",
+      "collection_sources": [
+        "local_index",
+        "local_index"
+      ],
+      "pixel_downloads": 0
+    },
+    {
+      "elapsed_ms": 91180.02890000935,
+      "wire_bytes": 108437,
+      "decoded_bytes": 108437,
+      "status": 200,
+      "server_timing": "app;dur=91167.545",
+      "cache": "local_index",
+      "coverage_complete": false,
+      "phase": "repeat_request",
+      "collection_sources": [
+        "local_index",
+        "local_index"
+      ],
+      "pixel_downloads": 0
+    }
+  ],
+  "current_archive_metadata": [
+    {
+      "elapsed_ms": 12156.087899988052,
+      "wire_bytes": 122934,
+      "decoded_bytes": 122934,
+      "status": 200,
+      "server_timing": "app;dur=12122.398",
+      "cache": "local_index",
+      "coverage_complete": false,
+      "phase": "initial_request",
+      "collection_sources": [
+        "local_index",
+        "local_index"
+      ],
+      "archive_errors": [
+        "Archive request failed: curl: (28) Operation timed out after 12011 milliseconds with 0 bytes received",
+        "Archive request failed: curl: (22) The requested URL returned error: 502"
+      ],
+      "retry_after_seconds": [
+        60,
+        60
+      ],
+      "pixel_downloads": 0
+    },
+    {
+      "elapsed_ms": 29.298999987076968,
+      "wire_bytes": 122934,
+      "decoded_bytes": 122934,
+      "status": 200,
+      "server_timing": "app;dur=27.109",
+      "cache": "local_index",
+      "coverage_complete": false,
+      "phase": "repeat_request",
+      "collection_sources": [
+        "local_index",
+        "local_index"
+      ],
+      "archive_errors": [
+        "Archive request failed: curl: (28) Operation timed out after 12011 milliseconds with 0 bytes received",
+        "Archive request failed: curl: (22) The requested URL returned error: 502"
+      ],
+      "retry_after_seconds": [
+        60,
+        49
+      ],
+      "pixel_downloads": 0
+    }
+  ]
+}

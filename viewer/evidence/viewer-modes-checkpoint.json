@@ -1,0 +1,103 @@
+{
+  "updated_utc": "2026-11-15T14:20:57.215311+00:00",
+  "activity": "Viewer: viewing intent and exact restoration",
+  "stage": "Implemented and locally tested",
+  "modes": [
+    "Watch through time",
+    "Explore infrared colours"
+  ],
+  "restore_fields": [
+    "coordinates",
+    "field diameter",
+    "prepared job",
+    "date filters",
+    "detector",
+    "wavelength group",
+    "time band",
+    "display source",
+    "image view",
+    "overlay",
+    "brightness",
+    "speed",
+    "frame selection/current frame",
+    "active tab",
+    "evidence pair"
+  ],
+  "limitations": [
+    "Metadata wavelength matching is not calibrated response/PSF equivalence.",
+    "No comparability means no time sequence, not a false variation.",
+    "No object brightness plot without supported measurements."
+  ],
+  "automated_tests": {
+    "backend": 54,
+    "view_state_selection": 39,
+    "existing_frontend": 29,
+    "input_validation": 27,
+    "evidence": 8
+  },
+  "browser_results": {
+    "fieldModeChecks": [
+      {
+        "target": "Barnard's Star",
+        "timeNotice": "No comparable time-separated pair in this prepared selection. Try another wavelength group or Explore infrared colours.",
+        "timePlayDisabled": true,
+        "colourPlayEnabled": true
+      },
+      {
+        "target": "Epsilon Indi B",
+        "timeNotice": "No comparable time-separated pair in this prepared selection. Try another wavelength group or Explore infrared colours.",
+        "timePlayDisabled": true,
+        "colourPlayEnabled": true
+      },
+      {
+        "target": "RW Aurigae",
+        "timeNotice": "No comparable time-separated pair in this prepared selection. Try another wavelength group or Explore infrared colours.",
+        "timePlayDisabled": true,
+        "colourPlayEnabled": true
+      },
+      {
+        "target": "R Draconis",
+        "timeNotice": "No comparable time-separated pair in this prepared selection. Try another wavelength group or Explore infrared colours.",
+        "timePlayDisabled": true,
+        "colourPlayEnabled": true
+      }
+    ],
+    "exactSettingsRestored": true,
+    "before": {
+      "brightness": "180",
+      "count": "24",
+      "detector": "SPHEREx-D4",
+      "display-source": "processed",
+      "evidence-a": "bdc10b476859e947817f61e4",
+      "evidence-b": "8afbda486d9c4826dd89d544",
+      "from": "2025-01-01",
+      "group": "all",
+      "mode": "frame",
+      "speed": "300",
+      "through": "2025-12-31",
+      "time-band": "8afbda486d9c4826dd89d544",
+      "timeline": "1",
+      "view-intent": "time"
+    },
+    "after": {
+      "brightness": "180",
+      "count": "24",
+      "detector": "SPHEREx-D4",
+      "display-source": "processed",
+      "evidence-a": "bdc10b476859e947817f61e4",
+      "evidence-b": "8afbda486d9c4826dd89d544",
+      "from": "2025-01-01",
+      "group": "all",
+      "mode": "frame",
+      "speed": "300",
+      "through": "2025-12-31",
+      "time-band": "8afbda486d9c4826dd89d544",
+      "timeline": "1",
+      "view-intent": "time"
+    },
+    "coaddRestored": true,
+    "differenceRestored": true,
+    "invalidStateRejected": true
+  },
+  "production_deployment_tested": false
+}

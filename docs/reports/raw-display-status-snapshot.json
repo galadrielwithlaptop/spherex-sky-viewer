@@ -1,0 +1,16 @@
+{
+  "snapshot_utc": "2026-11-15T11:46:53.642446+00:00",
+  "display_renderer": {
+    "updated_unix": 1794743213.1285493,
+    "policy": "Archive calibrated IMAGE; no ZODI subtraction, no quality-flag masking, no PSF/ePSF processing. Nearest-pixel sky alignment and common display stretch only.",
+    "errors": [],
+    "archive_downloads": 0
+  },
+  "field_download_state": "running",
+  "field_download_counts": {
+    "prepared": 33,
+    "failed": 0,
+    "loading": 1,
+    "pending": 243
+  }
+}

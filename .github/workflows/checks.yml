@@ -1,0 +1,23 @@
+name: Regression checks
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    env:
+      SPHEREX_CACHE_DIR: /tmp/spherex-test-cache
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: pip install -r viewer/requirements.txt
+      - run: python -m unittest discover -s viewer -p 'test_*.py'
+      - run: node viewer/test_raw_view.cjs
+      - run: node viewer/test_validation.cjs

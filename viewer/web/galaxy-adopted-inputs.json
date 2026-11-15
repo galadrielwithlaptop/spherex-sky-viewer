@@ -1,0 +1,40 @@
+[
+  {
+    "object_id": "LS9_9011_636281_2835",
+    "catalogue": "Legacy DR9",
+    "shape_status": "optical prior adopted, not proven exact in NIR",
+    "ra": 268.54442471663674,
+    "dec": 67.36513874766023,
+    "type": "REX",
+    "shape_r": 1.272283,
+    "shape_e1": 0.0,
+    "shape_e2": 0.0,
+    "sersic": 1.0,
+    "ref_epoch": 0.0,
+    "pmra": 0.0,
+    "pmdec": 0.0,
+    "maskbits": 0,
+    "fitbits": 0,
+    "mjd_min": 58027.195150460735,
+    "mjd_max": 58286.37289316583
+  },
+  {
+    "object_id": "LS9_9011_633415_2993",
+    "catalogue": "Legacy DR9",
+    "shape_status": "optical prior adopted, not proven exact in NIR",
+    "ra": 269.5723292210919,
+    "dec": 66.00480288970027,
+    "type": "REX",
+    "shape_r": 0.896745,
+    "shape_e1": 0.0,
+    "shape_e2": 0.0,
+    "sersic": 1.0,
+    "ref_epoch": 0.0,
+    "pmra": 0.0,
+    "pmdec": 0.0,
+    "maskbits": 0,
+    "fitbits": 0,
+    "mjd_min": 57908.45903935074,
+    "mjd_max": 58311.30259398744
+  }
+]

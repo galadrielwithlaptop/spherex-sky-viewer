@@ -1,0 +1,3 @@
+id,utc,mjd,wavelength_um,bandwidth_um,detector,collection,source_url
+bdc10b476859e947817f61e4,2025-05-06T12:22:33.802Z,60801.515669,3.4531538932993646,0.09678350972095585,SPHEREx-D4,spherex_dr1,https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W19_1B/l2b-v27-2026-197/4/level2_2025W19_1B_0241_2D4_spx_l2b-v27-2026-197.fits
+8afbda486d9c4826dd89d544,2025-10-31T18:57:47.318Z,60979.790131,3.442570534493775,0.09862722835025706,SPHEREx-D4,spherex_dr1,https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W44_2B/l2b-v27-2026-246/4/level2_2025W44_2B_0322_2D4_spx_l2b-v27-2026-246.fits
