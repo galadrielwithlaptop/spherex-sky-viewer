@@ -14,3 +14,6 @@ class CatalogueSyncTests(unittest.TestCase):
  def test_upstream_failure_never_claims_complete(self):
   with tempfile.TemporaryDirectory() as d,patch.object(sync,'STATE',Path(d)/'state.json'),patch.object(sync,'initialize_index'),patch.object(sync,'register_generation'),patch.object(sync,'text',side_effect=RuntimeError('502')),patch.object(sync,'ingest') as ingest:
    result=sync.run(1);self.assertEqual(result['status'],'upstream_failed');self.assertEqual(len(result['pending']),4);ingest.assert_not_called();self.assertEqual(result['header_downloads'],0)
+ def test_timeout_splits_pending_interval_without_importing_or_claiming_complete(self):
+  with tempfile.TemporaryDirectory() as d,patch.object(sync,'STATE',Path(d)/'state.json'),patch.object(sync,'initialize_index'),patch.object(sync,'register_generation'),patch.object(sync,'text',side_effect=RuntimeError('timeout')),patch.object(sync,'ingest') as ingest:
+   result=sync.run(1,split_failures=True);self.assertEqual(result['status'],'retrying_smaller_partition');self.assertEqual(len(result['pending']),5);self.assertEqual(result['completed_partitions'],0);ingest.assert_not_called()

@@ -174,7 +174,7 @@ class Handler(SimpleHTTPRequestHandler):
 
         if getattr(self,'versioned',False):
 
-            if isinstance(value.get('error'),str):value={'error':{'code':'invalid_request' if status==400 else 'request_failed','message':value['error']}}
+            if status>=400 and isinstance(value.get('error'),str):value={'error':{'code':'invalid_request' if status==400 else 'request_failed','message':value['error']}}
 
             value=dict(value,request_id=self.request_id)
 

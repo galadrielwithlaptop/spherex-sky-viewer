@@ -8,6 +8,14 @@ from archive import query_url
 from test_spatial import row
 
 class PublicAPITests(unittest.TestCase):
+    def test_metadata_sync_error_keeps_progress_fields(self):
+        path=self.root/'allsky-sync.json'
+        path.write_text(json.dumps({'status':'upstream_failed','error':'archive timeout','returned_records':12,'pixel_downloads':0}))
+        try:
+            status,_,body=self.json('/api/v1/catalogue-sync')
+            self.assertEqual(status,200);self.assertEqual(body['returned_records'],12)
+            self.assertEqual(body['status'],'upstream_failed');self.assertEqual(body['error'],'archive timeout')
+        finally:path.unlink()
     @classmethod
     def setUpClass(cls):
         cls.stack=ExitStack();cls.tmp=cls.stack.enter_context(tempfile.TemporaryDirectory());cls.root=Path(cls.tmp)

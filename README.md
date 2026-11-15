@@ -132,6 +132,11 @@ Metadata-only archive ingestion is available separately:
 docker compose exec viewer python sync_catalogue.py
 ```
 
+For a separate retrying metadata worker, use the optional
+[`compose.metadata.yaml`](compose.metadata.yaml). See
+[all-sky metadata scope and progress](docs/ALL_SKY_METADATA.md). Starting the
+worker does not establish that its all-sky import has completed.
+
 It resumes time partitions, but archive outages can prevent completion. A
 successful regional query or an image download does not establish all-sky
 completeness. Keep image preparation and metadata ingestion statuses separate.

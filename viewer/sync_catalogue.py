@@ -4,7 +4,7 @@ Split overflowing SIA time partitions until each response is complete. An
 interrupted or failed partition stays pending; never claim an incomplete index
 is all-sky-complete. Four current spectral-image collections are included.
 """
-import argparse,hashlib,json,time,uuid
+import argparse,hashlib,json,time,uuid,os,shutil
 from datetime import datetime,timezone
 from urllib.parse import urlencode
 from archive import AVAILABLE_COLLECTIONS,parse_votable
@@ -39,7 +39,7 @@ def finish_generation(state):
 def save(state):
     state['updated_utc']=datetime.now(timezone.utc).isoformat();temp=STATE.with_suffix('.tmp');temp.write_text(json.dumps(state,indent=2),encoding='utf-8');temp.replace(STATE)
 
-def run(max_requests=0):
+def run(max_requests=0,split_failures=False):
     initialize_index()
     if STATE.exists():state=json.loads(STATE.read_text())
     else:
@@ -49,12 +49,23 @@ def run(max_requests=0):
     attempted=0;state['status']='running';state.pop('error',None);save(state)
     while state['pending'] and (not max_requests or attempted<max_requests):
         collection,start,end=state['pending'][-1]
-        if DB.stat().st_size+sum(p.stat().st_size for p in DB.parent.glob(DB.name+'-*'))>4*1024**3:
-            state.update(status='storage_limit',error='4 GiB metadata database budget reached; pending partitions retained');break
+        budget=float(os.environ.get('SPHEREX_METADATA_MAX_GIB','4'))*1024**3
+        if DB.stat().st_size+sum(p.stat().st_size for p in DB.parent.glob(DB.name+'-*'))>budget or shutil.disk_usage(DB.parent).free<4*1024**3:
+            state.update(status='storage_limit',error='Metadata budget or 4 GiB free-disk reserve reached; pending partitions retained');break
         url='https://irsa.ipac.caltech.edu/SIA?'+urlencode({'COLLECTION':collection,'TIME':f'{start:.9f} {end:.9f}','MAXREC':2000})
-        attempted+=1;state['requests']+=1
+        attempted+=1;state['requests']+=1;save(state)
         try:result=parse_votable(text(url))
-        except Exception as e:state.update(status='upstream_failed',error=str(e),failed_query=url);save(state);return state
+        except Exception as e:
+            state.update(status='upstream_failed',error=str(e),failed_query=url)
+            if split_failures and end-start>1/24:
+                # Broad all-sky time queries may time out before emitting OVERFLOW.
+                # Smaller partitions remain pending; no response is called complete.
+                mid=(start+end)/2;state['pending'].pop();state['pending'].extend([[collection,mid,end],[collection,start,mid]])
+                state['status']='retrying_smaller_partition'
+            elif split_failures:
+                # Let other collections advance while retaining this failed interval.
+                state['pending'].insert(0,state['pending'].pop())
+            save(state);return state
         if result['truncated']:
             if end-start<1/86400:state.update(status='partition_overflow',error='Overflow remains at a one-second partition; no completeness claim');break
             mid=(start+end)/2;state['pending'].pop();state['pending'].extend([[collection,mid,end],[collection,start,mid]])
@@ -67,5 +78,23 @@ def run(max_requests=0):
     save(state);return state
 
 if __name__=='__main__':
-    parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--max-requests',type=int,default=0,help='0 means run until complete, archive failure or storage limit');args=parser.parse_args()
-    print(json.dumps(run(args.max_requests),indent=2))
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--max-requests',type=int,default=0,help='0 means run until complete, archive failure or storage limit')
+    parser.add_argument('--watch',action='store_true',help='Resume pending metadata partitions after transient failures; exits on completion/storage limit')
+    parser.add_argument('--retry-seconds',type=int,default=300)
+    args=parser.parse_args()
+    if args.max_requests<0 or args.retry_seconds<10:parser.error('Use max-requests >= 0 and retry-seconds >= 10')
+    # Separate from the viewer process; only one metadata importer owns this journal.
+    lock=open(CACHE/'allsky-sync.lock','a+b')
+    if os.name=='nt':
+        import msvcrt
+        lock.seek(0);lock.write(b'0');lock.flush();lock.seek(0)
+        msvcrt.locking(lock.fileno(),msvcrt.LK_NBLCK,1)
+    else:
+        import fcntl
+        fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+    while True:
+        result=run(args.max_requests,split_failures=args.watch)
+        print(json.dumps({k:v for k,v in result.items() if k!='pending'},indent=2),flush=True)
+        if not args.watch or result['status'] in ('complete_for_time_interval','storage_limit','partition_overflow'):break
+        time.sleep(10 if result['status']=='retrying_smaller_partition' else args.retry_seconds)

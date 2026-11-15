@@ -1,0 +1,14 @@
+# Optional worker: docker compose -f compose.yaml -f compose.metadata.yaml up -d --build
+services:
+  metadata:
+    build: ./viewer
+    restart: on-failure:5
+    command: [python, -u, sync_catalogue.py, --watch, --max-requests, "30", --retry-seconds, "300"]
+    volumes:
+      - ./data:/data
+    environment:
+      SPHEREX_CACHE_DIR: /data
+      SPHEREX_METADATA_TIMEOUT: "30"
+      SPHEREX_METADATA_MAX_GIB: "8"
+    mem_limit: 512m
+    cpus: 0.5
