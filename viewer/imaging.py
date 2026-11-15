@@ -19,6 +19,13 @@ PIXELS=256
 
 def wavelength_probe(row,ra,dec,cached_only=False):
     """Persist native WCS and wavelength grids without retrieving science pixels."""
+    local=CACHE/'local-import/wavelengths.json'
+    if local.exists():
+        record=json.loads(local.read_text()).get(row['id'])
+        if record and abs(record['ra']-ra)<1e-7 and abs(record['dec']-dec)<1e-7:
+            return {'wavelength_um':record['wavelength_um'],'bandwidth_um':record['bandwidth_um'],
+                    'detector':row['energy_bandpassname'],'collection':row['obs_collection'],
+                    'provenance':'Target-position wavelength from previously cached native cutout on the project laptop'}
     from remote_fits import RemoteFile
     directory=CACHE/'headers';directory.mkdir(exist_ok=True)
     key=hashlib.sha256(row['access_url'].encode()).hexdigest()[:24]

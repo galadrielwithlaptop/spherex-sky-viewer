@@ -14,12 +14,12 @@ As of **15 November 2026**, this repository includes:
 
 | Target | Indexed archive products | Cached 5′ IMAGE cutouts |
 |---|---:|---:|
-| WISE0855 | 277 | 13 |
+| WISE0855 | 277 | 89 |
 | Barnard's Star | 379 | 13 |
 | Epsilon Indi B | 478 | 13 |
 | RW Aurigae | 341 | 13 |
 | R Draconis | 575 | 13 |
-| **Total** | **2,050** | **65** |
+| **Total** | **2,050** | **141** |
 
 Archive overlap counts describe metadata records, not confirmed detections or
 independent same-wavelength epochs. This is a regional index, **not a complete
@@ -141,6 +141,9 @@ It resumes time partitions, but archive outages can prevent completion. A
 successful regional query or an image download does not establish all-sky
 completeness. Keep image preparation and metadata ingestion statuses separate.
 
+For the updated comparison and overlay controls, see
+[comparison metadata and outage handling](docs/COMPARISON_AND_OUTAGES.md).
+
 ## Public APIs
 
 Use `/api/docs` or `/api/openapi.json` for the full current contract. Examples:
@@ -174,8 +177,9 @@ logic. Fixture tests are not a substitute for hosted latency or browser testing.
 
 - Different wavelengths can mimic changes in brightness. The starter frames do
   not establish calibrated variability, motion measurements or discoveries.
-- No target-position wavelength or quality-flag analysis was performed for the
-  lightweight starter batch. Fixed coordinates do not propagate proper motion.
+- Wavelength comparability is checked only for frames with evaluated target-position
+  metadata. Quality flags are not loaded for IMAGE-only previews. Fixed coordinates
+  do not propagate proper motion.
 - A requested field can have partial detector coverage; missing pixels remain
   missing. Spatial overlap does not prove the named target is visible.
 - Advanced analysis/coadd/difference features retain a separate legacy processing

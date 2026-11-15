@@ -23,7 +23,9 @@ def main():
     parser.add_argument('--execute', action='store_true')
     parser.add_argument('--cache-only', action='store_true')
     parser.add_argument('--base-url', default='http://127.0.0.1:8765')
-    parser.add_argument('--per-target', type=int, choices=range(1, 25), default=3)
+    parser.add_argument('--per-target', type=int, choices=range(1, 501), default=3)
+    parser.add_argument('--target',help='Limit this run to one exact name from /api/v1/targets')
+    parser.add_argument('--inspect-wavelengths',action='store_true',help='Read target-position wavelength metadata, without ePSF or ZODI processing')
     parser.add_argument('--minutes', type=int, choices=range(1, 56), default=45)
     args = parser.parse_args()
     from store import CACHE
@@ -53,6 +55,10 @@ def main():
         temporary.replace(published/'index.json')
 
     targets = get('/api/v1/targets')['targets']
+    if args.target:
+        targets=[t for t in targets if t['name']==args.target]
+        if not targets:parser.error('Unknown target name')
+        report['targets']=[t for t in previous['targets'] if t['name']!=args.target]
     # Plan every target first; execute round-robin so one field cannot monopolize the batch.
     for target in targets:
         if time.monotonic() >= deadline:
@@ -85,8 +91,9 @@ def main():
             entry['error'] = str(exc)
         save()
     if args.execute:
-        for slot in range(max((len(t['selected']) for t in report['targets']),default=0)):
-            for entry in report['targets']:
+        work=[t for t in report['targets'] if not args.target or t['name']==args.target]
+        for slot in range(max((len(t['selected']) for t in work),default=0)):
+            for entry in work:
                 if slot >= len(entry['selected']):
                     continue
                 # Allow a reserve for a bounded current HTTP request to finish.
@@ -95,9 +102,11 @@ def main():
                     save()
                     return
                 row = entry['selected'][slot]
-                if any(r['id']==row['id'] and r['state']=='ready' for r in entry['results']):continue
-                result = {'id': row['id'], 'state': 'loading'}
-                entry['results'].append(result)
+                result=next((r for r in entry['results'] if r['id']==row['id']),None)
+                if result and result['state']=='ready' and (not args.inspect_wavelengths or result.get('wavelength_status')=='measured'):continue
+                if result is None:
+                    result={'id':row['id']};entry['results'].append(result)
+                result['state']='loading'
                 save()
                 try:
                     params = dict(ra=entry['ra'], dec=entry['dec'], fov=5)
@@ -130,6 +139,16 @@ def main():
                              'wavelength_um':sum(row['wavelength_bounds_um'])/2,
                              'wavelength_reference':'Detector-wide midpoint only; target wavelength not inspected',
                              'wavelength_bounds_um':row['wavelength_bounds_um']}
+                    if args.inspect_wavelengths:
+                        from imaging import wavelength_probe
+                        from store import exposure
+                        try:
+                            measured=wavelength_probe(exposure(row['id']),entry['ra'],entry['dec'])
+                            frame.update(wavelength_um=measured['wavelength_um'],bandwidth_um=measured['bandwidth_um'],wavelength_reference='target',wavelength_provenance=measured.get('provenance','Native SPHEREx WCS-WAVE grid evaluated at the requested sky coordinate'))
+                            result['wavelength_status']='measured'
+                        except Exception as error:
+                            frame['wavelength_error']=str(error)
+                            result.update(wavelength_status='unavailable',wavelength_error=str(error))
                     manifest = {'recipe_version':'archive-image-display-v1', 'source':'archive_IMAGE',
                                 'parameters':params,'frames':[frame],'groups':[], 'errors':[],
                                 'psf_applied':False,'zodi_subtracted':False,'quality_mask_applied':False,

@@ -108,28 +108,19 @@
     try{const p=values(),r=await api('/api/v1/field-downloads',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({ra:Number(p.ra),dec:Number(p.dec),fov_arcmin:Number(p.fov),observation_ids:selected.map(r=>r.id)})});await monitorField(r);}
     catch(e){summary.textContent='Field job could not start: '+e.message;}
   }
+  window.tryOpenCachedField=async()=>{
+    const rev=revision,p=values();
+    const response=await api('/api/v1/prepared?'+new URLSearchParams({...p,detector:$('#detector').value,from:$('#from').value,through:$('#through').value}));
+    if(rev!==revision||!response.job_id)return false;
+    manifest=response.manifest;job=response.job_id;loadManifest();rememberJob(job);
+    message(`${response.cached_frames} cached archive IMAGE frames opened from this server. No image download was needed.`);
+    return true;
+  };
   // Search prepares a progressively delivered initial selection, never substitutes
   // a small cached sequence for a larger requested selection.
   prepareSequence=async(reuse=false)=>{
     if(!validateViewerInputs()||busy)return;
-    if(reuse){
-      try{
-        const response=await fetch('/products/starter/index.json',{cache:'no-store'});
-        if(response.ok){
-          const saved=await response.json(),p=values();
-          const target=saved.targets.find(t=>t.sequence_id&&Math.abs(Number(p.ra)-t.ra)<1e-7&&Math.abs(Number(p.dec)-t.dec)<1e-7&&Number(p.fov)===saved.diameter_arcmin);
-          if(target){
-            const ready=await api('/api/v1/sequences/'+target.sequence_id);
-            const start=$('#from').value?Date.parse($('#from').value):-Infinity,end=$('#through').value?Date.parse($('#through').value)+86400000:Infinity;
-            if(ready.state==='complete'&&ready.manifest.frames.some(f=>($('#detector').value==='all'||f.detector===$('#detector').value)&&Date.parse(f.utc)>=start&&Date.parse(f.utc)<end)){
-              manifest=ready.manifest;job=target.sequence_id;loadManifest();rememberJob(job);
-              message(`${manifest.frames.length} cached archive IMAGE frames opened. No new image downloads. The full metadata list remains available in Data & downloads.`);
-              return;
-            }
-          }
-        }
-      }catch(error){$('#selection-note').textContent='Prepared-cache lookup unavailable: '+error.message;}
-    }
+    if(reuse&&await window.tryOpenCachedField())return;
     await review();
     const start=$('#from').value?Date.parse($('#from').value):-Infinity,end=$('#through').value?Date.parse($('#through').value)+86400000:Infinity;
     const eligible=rows.filter(r=>($('#detector').value==='all'||r.energy_bandpassname===$('#detector').value)&&((Number(r.t_min)-40587)*86400000>=start)&&((Number(r.t_min)-40587)*86400000<end));

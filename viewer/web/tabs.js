@@ -5,7 +5,7 @@
   const hints = {
     search: 'Choose a target or coordinates, then click Find observations. Your image stays visible across tabs.',
     playback: 'Load images in Find sky images first. Then play or step through dates. Detector/date settings are in Advanced settings at the top right.',
-    compare: 'Select a wavelength group before comparing its mean coadd or last-minus-first difference. These views are exploratory.',
+    compare: 'Choose a comparable pair to inspect two cached images, dates, wavelengths and bandwidths side by side.',
     overlays: 'Choose Gaia or AllWISE to overlay catalogue positions on the loaded image.',
     data: 'Inspect available observations, export metadata, and download products from the loaded sequence.',
     api: 'Open the interactive documentation to try coordinate queries and integrate the versioned API.'

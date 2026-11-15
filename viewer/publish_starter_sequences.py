@@ -5,7 +5,8 @@ from urllib.parse import urlencode
 import numpy as np
 from store import CACHE
 from raw_previews import image_plane, POLICY
-from imaging import png
+from imaging import png,compatible
+from store import exposure
 
 
 def main():
@@ -25,6 +26,12 @@ def main():
             source = CACHE/'products'/result['product_id']
             arrays.append(image_plane(source/'native-image.fits',params))
             frame = json.loads((source/'manifest.json').read_text())['frames'][0]
+            metadata=exposure(frame['id'])
+            frame.update(target_position_icrs_deg=[params['ra'],params['dec']],
+                         exposure_seconds=float(metadata['t_exptime']) if metadata.get('t_exptime') else None,
+                         archive_footprint=metadata.get('s_region'),
+                         quality_status='Quality flags not loaded for this IMAGE-only preview; artifacts may be visible')
+            frame['cutout_sha256']=hashlib.sha256((source/'native-image.fits').read_bytes()).hexdigest()
             frame['native_fits'] = result['native_fits']
             # Use archive detector identifiers expected by the viewer filters.
             frame['detector'] = 'SPHEREx-'+frame['detector']
@@ -39,11 +46,17 @@ def main():
             image.save(raw/f'{i}.png')
             image.save(dest/f'{i}.png')
             frame.update(index=i,image=f'/products/{key}/raw/{i}.png')
+        groups=[]
+        for i,frame in enumerate(frames):
+            if frame.get('wavelength_reference')!='target':continue
+            group=next((g for g in groups if all(compatible(frame,frames[j]) for j in g)),None)
+            if group is None:groups.append([i])
+            else:group.append(i)
         manifest = {'recipe_version':'archive-image-display-v1','source':'archive_IMAGE',
-                    'frames':frames,'groups':[],'parameters':params,'errors':[],
+                    'frames':frames,'groups':[{'indices':g,'wavelength_um':sum(frames[i]['wavelength_um'] for i in g)/len(g),'coadd':None,'difference':None,'animation':None,'metadata_only_group':True} for g in groups], 'parameters':params,'errors':[],
                     'processing':POLICY,'psf_applied':False,'zodi_subtracted':False,
                     'quality_mask_applied':False,'stretch':{'low':float(low),'high':float(high),'method':'common asinh','units':'MJy/sr'},
-                    'warnings':['Starter images mix detector responses; no target-position wavelength inspection. Brightness changes are not established.']}
+                    'warnings':['Each frame reports whether its target-position wavelength was measured. Mixed wavelengths and detector artifacts can mimic brightness change.']}
         payload=json.dumps(manifest)
         (raw/'manifest.json').write_text(payload,encoding='utf-8')
         (dest/'manifest.json').write_text(payload,encoding='utf-8')

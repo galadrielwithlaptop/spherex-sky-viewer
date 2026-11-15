@@ -257,6 +257,13 @@ class Handler(SimpleHTTPRequestHandler):
             if u.path=='/api/v1/catalogue-sync':
                 path=CACHE/'allsky-sync.json'
                 return self.json(json.loads(path.read_text()) if path.exists() else {'status':'not_started','complete':False})
+            if u.path=='/api/v1/prepared':
+                from prepared_cache import find
+                params={k:float(one(q,k,'5' if k=='fov' else None)) for k in ('ra','dec','fov')}
+                query_url(**params,collection=COLLECTIONS[0])
+                detector=one(q,'detector','all')
+                if detector not in ['all']+[f'SPHEREx-D{i}' for i in range(1,7)]:raise APIError('Unsupported detector')
+                return self.json(find(PRODUCTS,params,detector,one(q,'from'),one(q,'through')))
             if u.path.startswith('/api/v1/'):
 
                 from public_api import get

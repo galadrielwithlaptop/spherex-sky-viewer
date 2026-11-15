@@ -5,6 +5,8 @@
   document.querySelector('.stage').before(host);
   const recovery=document.createElement('button');recovery.type='button';recovery.id='show-available-images';recovery.textContent='Show available infrared images';recovery.hidden=true;
   host.append(recovery);
+  const refreshCached=document.createElement('button');refreshCached.type='button';refreshCached.className='secondary';refreshCached.textContent='Refresh cached images & metadata';host.append(refreshCached);
+  refreshCached.onclick=async()=>{refreshCached.disabled=true;try{if(!await window.tryOpenCachedField())message('No prepared images are currently cached for these coordinates and field size.');}catch(error){message('Cached images could not be refreshed: '+error.message);}finally{refreshCached.disabled=false;}};
   recovery.onclick=()=>{node('view-intent').value='colour';node('group').value='all';node('detector').value='all';node('from').value='';node('through').value='';node('mode').value='frame';rejectedView=null;window.applyViewerSelection();};
   let saved=null,restoring=false,rejectedView=null;
   const originalURL=new URLSearchParams(location.search),encoded=originalURL.get('view');
@@ -17,7 +19,8 @@
     stop();const state=filterState(),g=node('group').value;
     let pool=manifest.frames;
     if(g!=='all')pool=manifest.groups[Number(g)]?.indices.map(i=>manifest.frames[i])||[];
-    const result=SkyViewState.select(pool,state),band=node('time-band'),oldBand=state.timeBand;
+    const result=SkyViewState.displaySelect(pool,state,!restoring&&!options.frameIds),band=node('time-band'),oldBand=state.timeBand;
+    if(result.fallback){state.intent='colour';node('view-intent').value='colour';}
     band.replaceChildren();for(const group of result.groups){const option=document.createElement('option');option.value=group.key;option.textContent=`${group.centre.toFixed(4)} µm · ${group.frames.length} frames`;band.append(option);}
     if(result.groups.some(g=>g.key===oldBand))band.value=oldBand;
     else if(result.frames.length&&state.intent==='time')band.value=result.groups.find(g=>g.frames.some(f=>f.id===result.frames[0].id))?.key||'';
@@ -34,7 +37,7 @@
     recovery.hidden=true;$('#empty').hidden=true;
     node('timeline').max=indices.length-1;node('timeline').value=at;
     for(const id of ['play','prev','next','timeline'])node(id).disabled=indices.length<2;
-    node('view-intent-note').textContent=state.intent==='time'?'Chronological playback of approximately comparable responses. Matching is a metadata screen, not proof of equal PSFs, alignment or source variability.':'Wavelength-ordered playback. Dates remain visible: brightness differences may be spectral, temporal or instrumental.';
+    node('view-intent-note').textContent=result.fallback?`A wavelength-matched time comparison is unavailable. Showing ${frames.length} available cached images in Explore infrared colours instead. Target-position wavelength metadata may be missing; brightness changes are not established.`:state.intent==='time'?'Chronological playback of approximately comparable responses. Matching is a metadata screen, not proof of equal PSFs, alignment or source variability.':'Wavelength-ordered playback. Dates remain visible: brightness differences may be spectral, temporal or instrumental.';
     const mode=node('mode').value;
     if(mode==='mosaic'&&(node('display-source').value==='raw'||!manifest.mosaic?.image||indices.length!==manifest.frames.length))throw Error('The saved spatial mosaic is unavailable for this image source or filtered selection.');
     if(mode!=='frame'&&mode!=='mosaic'){

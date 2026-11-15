@@ -4,6 +4,7 @@ from urllib.parse import urlencode
 from archive import query_url, COLLECTIONS, parse_votable
 from network import text
 from store import CACHE
+from catalogue import APIError
 
 def catalogue(ra,dec,fov,name,cache_only=False):
     query_url(ra,dec,fov,COLLECTIONS[0])
@@ -18,8 +19,17 @@ def catalogue(ra,dec,fov,name,cache_only=False):
     if path.exists() and (cache_only or time.time()-path.stat().st_mtime<86400):
         return dict(json.loads(path.read_text()),cached=True,stale=time.time()-path.stat().st_mtime>=86400)
     if cache_only:raise ValueError('This overlay is not cached; use mode=auto for a metadata-only catalogue query')
-    raw=text(url)
-    parsed=parse_votable(raw);rows=[{k:v for k,v in row.items() if k in columns.split(',')} for row in parsed['rows']]
+    try:
+        raw=text(url)
+        parsed=parse_votable(raw)
+    except Exception as error:
+        label='AllWISE' if name=='wise' else 'Gaia'
+        message=f'IRSA is unavailable. The {label} catalogue could not be reached. Cached sky images remain available.'
+        if path.exists():
+            saved=json.loads(path.read_text())
+            return dict(saved,cached=True,stale=True,archive_unavailable=True,warning=message+' Showing an older cached catalogue. '+saved['warning'])
+        raise APIError(message,502,'irsa_unavailable') from error
+    rows=[{k:v for k,v in row.items() if k in columns.split(',')} for row in parsed['rows']]
     if rows and 'ra' not in rows[0]:raise ValueError('Unexpected catalogue response')
     result={'catalogue':table,'query_url':url,'rows':rows[:500],'truncated':len(rows)>500 or parsed['truncated'],'fetched':time.time(),'warning':'Gaia positions use a linear proper-motion approximation when available, without parallax or radial velocity. AllWISE positions remain at catalogue epochs. Cone margin and 500-row cap limit completeness.'}
     path.write_text(json.dumps(result));return result

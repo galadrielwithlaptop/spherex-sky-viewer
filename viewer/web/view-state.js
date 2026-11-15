@@ -22,6 +22,12 @@
     }else chosen=pool.sort((a,b)=>a.wavelength_um-b.wavelength_um||a.mjd-b.mjd||a.id.localeCompare(b.id));
     return {frames:chosen,groups};
   }
+  function displaySelect(frames,state,allowFallback=true){
+    const selected=select(frames,state);
+    if(state.intent!=='time'||selected.frames.length||!allowFallback)return {...selected,fallback:false};
+    const available=select(frames,{...state,intent:'colour'});
+    return {...available,fallback:available.frames.length>0};
+  }
   const enumFields={intent:['time','colour'],source:['raw','processed'],mode:['frame','coadd','difference','mosaic'],overlay:['none','gaia','wise'],sequence:['matched','all'],speed:['1400','700','300'],count:['6','12','24'],tab:['search','playback','compare','overlays','data','api']};
   function validate(s){
     if(!s||typeof s!=='object'||Array.isArray(s)||s.v!==1)throw Error('Unsupported saved-view version.');
@@ -39,5 +45,5 @@
   }
   function serialize(s){return JSON.stringify(validate(s));}
   function parse(text){if(text.length>20000)throw Error('Saved view is too large.');return validate(JSON.parse(text));}
-  return {compatible,independent,timeGroups,select,validate,serialize,parse};
+  return {compatible,independent,timeGroups,select,displaySelect,validate,serialize,parse};
 });

@@ -9,6 +9,12 @@
   <details><summary>Five challenge fields: what is ready?</summary><div id="challenge-readiness">Loading saved field checks...</div></details><p><a href="reproduce.ipynb" download>Download the reproducible notebook (.ipynb)</a> · <a href="notebook-example.zip" download>Offline example images (ZIP)</a> · <a href="challenge-validation.json" download>Five-field test report</a></p>`;
   [...document.querySelectorAll('.notes')].find(n=>n.id!=='view-intent-controls').before(panel);
   const a=panel.querySelector('#evidence-a'),b=panel.querySelector('#evidence-b');let key='',frames=[],selectedA=null,selectedB=null;
+  const comparePanel=document.querySelector('#compare-panel');if(comparePanel)comparePanel.append(panel);
+  const pairButton=document.createElement('button');pairButton.type='button';pairButton.className='secondary';pairButton.textContent='Choose a comparable pair';pairButton.disabled=true;
+  panel.querySelector('.controls').after(pairButton);
+  const previews=document.createElement('div');previews.className='controls';panel.querySelector('#evidence-facts').after(previews);
+  function bestPair(pool){const groups=SkyViewState.timeGroups(pool).sort((a,b)=>(b.frames.at(-1).mjd-b.frames[0].mjd)-(a.frames.at(-1).mjd-a.frames[0].mjd));return groups.length?[groups[0].frames[0].id,groups[0].frames.at(-1).id]:[pool[0]?.id,pool.at(-1)?.id];}
+  pairButton.onclick=()=>{const pair=bestPair(frames);a.value=pair[0];b.value=pair[1];update();};
   const params=new URLSearchParams(location.search);
   function finite(value){return typeof value==='number'&&Number.isFinite(value);}
   function assess(x,y){
@@ -33,18 +39,22 @@
     selectedA=frames.find(f=>f.id===a.value);selectedB=frames.find(f=>f.id===b.value);
     const check=assess(selectedA,selectedB);panel.querySelector('#evidence-result').textContent=check.level;
     const box=panel.querySelector('#evidence-facts');box.replaceChildren();
+    previews.replaceChildren();
+    for(const [label,frame] of [['First',selectedA],['Second',selectedB]])if(frame){const figure=document.createElement('figure');figure.style.margin='0';const image=document.createElement('img');image.src=$('#display-source').value==='raw'?`/products/${job}/raw/${frame.index??manifest.frames.findIndex(f=>f.id===frame.id)}.png`:frame.image;image.alt=label+' observation '+frame.utc;image.width=256;image.height=256;image.style.maxWidth='100%';const caption=document.createElement('figcaption');caption.textContent=frame.utc+' · '+frame.detector+' · '+(finite(frame.bandwidth_um)?frame.wavelength_um.toFixed(5)+' µm / width '+frame.bandwidth_um.toFixed(5)+' µm':'Target wavelength not measured');figure.append(image,caption);previews.append(figure);}
     for(const text of check.notes){const p=document.createElement('p');p.className='small';p.textContent=text;box.append(p);}
     for(const [name,f] of [['First',selectedA],['Second',selectedB]])if(f){const p=document.createElement('p');p.className='small';p.textContent=`${name}: ${f.utc||'Unknown date'} · ${f.wavelength_um??'unknown'} µm · ${f.detector||'unknown detector'} · native flagged fraction ${finite(f.native_flagged_fraction)?(100*f.native_flagged_fraction).toFixed(1)+'%':'unknown'}. Flags describe the cutout, not specifically the selected star.`;box.append(p);}
   }
   a.onchange=b.onchange=update;
-  window.addEventListener('sky-view-selection',()=>{if(!frames.length||!indices.length)return;const pair=window.restoredEvidencePair||[manifest.frames[indices[0]].id,manifest.frames[indices[indices.length-1]].id];a.value=pair[0];b.value=pair[1];update();});
+  window.addEventListener('sky-view-selection',()=>{if(!frames.length||!indices.length)return;const pair=window.restoredEvidencePair||bestPair(indices.map(i=>manifest.frames[i]));a.value=pair[0];b.value=pair[1];update();});
   function refresh(){
     const m=typeof manifest==='undefined'?null:manifest;
     const next=m?`${job}|${m.frames.map(f=>f.id).join(',')}`:'';
     if(next===key)return;key=next;frames=m?.frames||[];
     for(const select of [a,b]){select.replaceChildren();frames.forEach(f=>{const option=document.createElement('option');option.value=f.id;option.textContent=`${f.utc||'Unknown date'} · ${Number(f.wavelength_um).toFixed(4)} µm`;select.append(option);});}
+    const suggested=bestPair(frames);pairButton.disabled=!SkyViewState.timeGroups(frames).length;
     a.value=frames.some(f=>f.id===params.get('evidence_a'))?params.get('evidence_a'):(window.restoredEvidencePair?.[0]||manifest?.frames[indices?.[0]]?.id||frames[0]?.id||'');
     b.value=frames.some(f=>f.id===params.get('evidence_b'))?params.get('evidence_b'):(window.restoredEvidencePair?.[1]||manifest?.frames[indices?.[indices.length-1]]?.id||frames[1]?.id||frames[0]?.id||'');
+    if(!params.get('evidence_a')&&!params.get('evidence_b')&&!window.restoredEvidencePair&&SkyViewState.timeGroups(frames).length){a.value=suggested[0];b.value=suggested[1];}
     panel.querySelector('#evidence-share').disabled=panel.querySelector('#evidence-export').disabled=!frames.length;panel.querySelector('#evidence-blink').disabled=frames.length<2;update();
   }
   panel.querySelector('#evidence-blink').onclick=()=>{

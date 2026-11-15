@@ -6,7 +6,7 @@ the five fields. `starter-5arcmin.json` retains per-observation source metadata
 and preparation results. `products/starter/index.json` is the published display
 catalogue; target sequence IDs point to prepared manifests under `products/`.
 
-There are 65 unique ready starter IMAGE cutouts, 13 per target. Sequence products
+There are 141 ready IMAGE cutouts: 89 for WISE0855 and 13 each for the other four targets. The VM backfill was still progressing when this snapshot was captured. Sequence products
 also contain derived PNG copies and manifests from progressive publication;
 counting all files is not a count of unique archive observations.
 
